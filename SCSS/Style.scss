@@ -1,1 +1,10 @@
-@import 'Partials/Attributes'
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Yellowtail&display=swap');
+@import 'Partials/Attributes';
+
+// To access fonts, use below styles 
+
+// Roboto is main text, adjust font weight to fit titles and paragraphs
+// font-family: 'Roboto', sans-serif;
+
+// Yellowtail is the fancy font used for the name 'Bakers Dozen'
+// font-family: 'Yellowtail', cursive;
