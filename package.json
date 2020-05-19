@@ -1,0 +1,30 @@
+{
+  "name": "bakers-dozen",
+  "version": "1.0.0",
+  "description": "Netmatters paired project",
+  "main": "index.js",
+  "scripts": {
+    "Watch SCSS": "node-sass --watch SCSS -o CSS"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lloydcox/bakers-dozen.git"
+  },
+  "keywords": [
+    "collab",
+    "bread",
+    "baker"
+  ],
+  "author": "Luke Youngman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lloydcox/bakers-dozen/issues"
+  },
+  "homepage": "https://github.com/lloydcox/bakers-dozen#readme",
+  "dependencies": {
+    "node-sass": "^4.14.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.6"
+  }
+}
