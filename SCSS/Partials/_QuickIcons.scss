@@ -1,0 +1,20 @@
+#QuickIcons {
+  display: flex;
+  color: $Main;
+  width: 100%;
+  justify-content: space-around;
+  padding: 150px 90px 80px;
+  .icon {
+    text-align: center;
+    width: 380px;
+    h3 {
+      font-size: 2rem;
+      font-weight: 700;
+      letter-spacing: 3px;
+    }
+    .fas {
+      font-size: 80px;
+      margin-bottom: 15px;
+    }
+  }
+}
