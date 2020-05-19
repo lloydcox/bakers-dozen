@@ -4,7 +4,7 @@
   "description": "Netmatters paired project",
   "main": "index.js",
   "scripts": {
-    "Watch SCSS": "node-sass --watch SCSS -o CSS"
+    "SCSS": "node-sass --watch SCSS -o CSS"
   },
   "repository": {
     "type": "git",
@@ -21,10 +21,8 @@
     "url": "https://github.com/lloydcox/bakers-dozen/issues"
   },
   "homepage": "https://github.com/lloydcox/bakers-dozen#readme",
-  "dependencies": {
-    "node-sass": "^4.14.1"
-  },
+  "dependencies": {},
   "devDependencies": {
-    "@babel/core": "^7.9.6"
+    "node-sass": "^4.14.1"
   }
 }
