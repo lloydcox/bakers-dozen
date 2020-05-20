@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Yellowtail&display=swap');
-@import 'Partials/Attributes', 'Partials/Header', 'Partials/QuickIcons';
+@import 'Partials/Attributes', 'Partials/Header', 'Partials/QuickIcons', 'Partials/ProductsCarousel';
 
 // To access fonts, use below styles 
 
@@ -14,4 +14,8 @@
 *{
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
+}
+
+.overflow-hidden {
+    overflow: hidden;
 }
