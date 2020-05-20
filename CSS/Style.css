@@ -150,6 +150,63 @@
         #Products .slick-carousel .product span .cupcakes {
           transform: translateX(-31px); }
 
+#Reviews {
+  padding: 0 100px;
+  text-align: center; }
+  #Reviews h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: #52658f; }
+  #Reviews .review-slick .slick-dots {
+    list-style-type: none;
+    display: flex;
+    justify-content: center; }
+    #Reviews .review-slick .slick-dots .slick-active button {
+      background-color: #52658f; }
+      #Reviews .review-slick .slick-dots .slick-active button:focus {
+        outline: none; }
+    #Reviews .review-slick .slick-dots li {
+      margin: 0 50px; }
+      #Reviews .review-slick .slick-dots li button {
+        font-size: 0;
+        border: none;
+        width: 10px;
+        height: 10px;
+        border-radius: 100%;
+        background-color: #a9b1c4; }
+        #Reviews .review-slick .slick-dots li button:focus {
+          outline: none; }
+  #Reviews .review-slick .review-item:focus {
+    outline: none; }
+  #Reviews .review-slick .review-item .customer {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end; }
+    #Reviews .review-slick .review-item .customer h4 {
+      font-size: 1.9rem;
+      font-weight: 600;
+      letter-spacing: 3px;
+      color: #52658f;
+      margin-right: 150px; }
+  #Reviews .review-slick .review-item .review {
+    display: flex;
+    justify-content: center;
+    color: #343957; }
+    #Reviews .review-slick .review-item .review p {
+      font-size: 1.8rem;
+      font-weight: 200;
+      width: 80%;
+      margin-left: 30px;
+      margin-top: 60px; }
+    #Reviews .review-slick .review-item .review span {
+      width: 80px; }
+      #Reviews .review-slick .review-item .review span p {
+        margin: 0 auto;
+        text-align: center;
+        font-size: 100px;
+        font-family: "Yellowtail", cursive; }
+
 * {
   font-family: 'Roboto', sans-serif;
   box-sizing: border-box; }

@@ -11,3 +11,16 @@ $(document).ready(function(){
       nextArrow: '<button type="button" class="slick-next"><i class="fas fa-chevron-right"></i></button>'
     });
   });
+
+  $(document).ready(function(){
+    $('#Reviews .review-slick').slick({
+      autoplay: true,
+      infinite: true,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      autoplaySpeed: 3000,
+      speed: 1000,
+      arrows: false,
+      dots: true
+    });
+  });
