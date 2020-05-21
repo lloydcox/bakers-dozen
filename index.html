@@ -5,20 +5,22 @@
     <title>Bakers Dozen</title>
     <meta name="Bakers Dozen" content="Bakers Dozen simple website">
     <link href="styles.css" rel="stylesheet" type="text/css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script src="script.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> -->
+    <!-- <script src="script.js"></script> -->
   </head>
   <body>
     <header class="main-header">
-            <h1 class="name">Baker's Dozen</h1>
-                <ul class="main-nav">
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Products</a></li>
-                    <li><a href="#">Testimonials</a></li>
-                    <li><a href="#">Order</a></li>
-                    <li><a href="#"><i class="fas fa-phone"></i></a></li>
-                </ul>
-
+      <!-- Added a div container to isolate the elements in the top bar -Luke -->
+      <div class="header-container">
+        <h1 class="name">Baker's Dozen</h1>
+        <ul class="main-nav">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Testimonials</a></li>
+            <li><a href="#">Order</a></li>
+            <li><a href="#"><i class="fas fa-phone"></i></a></li>
+        </ul>
+      </div>   
     </header>
     <!-- Content -->
 
@@ -29,7 +31,10 @@
       <div class="cols">
           <div class="col-1">
             <h3>Adress</h3>
-            <p>107 Gloucester Street<br>Norwhich, Norfolk<br>NR2 2DY<br><br>01603 123 987<br>info@bakersdozen.co.uk</p>
+            <!-- Ive split this into 2 p tags, this wau you have more control on space 
+            between them in css -Luke -->
+            <p>107 Gloucester Street<br>Norwhich, Norfolk<br>NR2 2DY</p>
+            <p>01603 123 987<br>info@bakersdozen.co.uk</p>
           </div>
 
           <div class="col-2">
@@ -40,11 +45,12 @@
           <div class="col-3">
             <h3>Sections</h3>
               <ul class="footer-nav">
-                <li><a href="#"> > About</a></li>
-                <li><a href="#"> > Products</a></li>
-                <li><a href="#"> > Testimonials</a></li>
-                <li><a href="#"> > Order</a></li>
-                <li><a href="#"> > Privacy Policy</a></li>
+                <!-- Removed the > and added them using a pseudo element in the styling - Luke -->
+                <li><a href="#"> About</a></li>
+                <li><a href="#"> Products</a></li>
+                <li><a href="#"> Testimonials</a></li>
+                <li><a href="#"> Order</a></li>
+                <li><a href="#"> Privacy Policy</a></li>
             </ul>
           </div>
       </div>
