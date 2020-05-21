@@ -1,0 +1,175 @@
+/*CSS File*/
+*{border: 1px solid black;}
+/* -- Font styles --*/
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Yellowtail&display=swap");
+* {
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box; }
+
+/* Roboto is main text, adjust font weight to fit titles and paragraphs */
+/* font-family: 'Roboto', sans-serif; 
+
+/* Yellowtail is the fancy font used for the name 'Bakers Dozen' */
+/* font-family: 'Yellowtail', cursive; */
+
+/* -- Attributes 
+
+Main : #52658f;
+Secondary : #f7882f;
+Contrast : #343957;
+
+MainOpa : #a9b1c4;
+
+Background : #fff;
+
+Cream : #f7f5e6;
+
+/* Base Styles */
+
+
+header {
+    background-color: #52658f;
+    height: 100px;
+    
+    display: flex;  
+    justify-content: space-evenly;  
+}
+
+.name {
+    font-size: 4em;
+    letter-spacing: 1px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.main-nav {
+    display: flex;
+    align-items: baseline;
+    flex-basis: auto;
+    list-style: none;
+}	
+ 
+.ul,
+.li         {
+    list-style: none;
+    align-items: baseline;
+    flex: 1;
+}
+
+a {
+	text-decoration: none;
+}
+
+footer {
+    display: flex;
+    background-color: #52658f;
+    color: #f7f5e6;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.footer-nav,
+li         {
+    flex-direction: column;
+    padding-left: 0;
+}
+
+.cols {
+    display: flex;
+    justify-content: space-around;
+}
+
+.copy {
+    align-self: center;
+    justify-content: center;
+}
+
+h3 {
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.fas  {
+    color: orange;
+    font-size: xx-large;
+    border: #343957 solid 15px;
+    border-radius: 50%;
+    text-align: center;
+    background-color: #343957;
+}
+
+/* ---- Navigation ---- */
+
+.name {
+    font-family: 'Yellowtail', cursive;
+    color: #f7f5e6;
+	text-align: center;
+    font-weight: 300;
+}
+
+.main-nav a {
+	
+	font-size: 1em;
+	color: #f7f5e6;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    text-align: center;
+
+}
+
+/* Pseudo-classes ------------------ */
+
+a:link {
+    color: #f7f5e6;    
+} 
+a:visited {
+    color: #f7f5e6;
+}
+  
+a:hover {
+    color: #f7f5e6;
+}
+
+a:after {
+    content: "";
+    display: block;
+    width: 0;
+    border-bottom: 3px solid;
+    margin: 2px auto;
+    transition:all 0.3s linear 0s;
+}
+
+a:hover:after {
+    color: orange;    
+    width: 100%;
+}
+
+  
+/* ================================= 
+  Media Queries
+==================================== 
+ @media (min-width: 769px) {
+
+    .main-header,
+    .main-nav, 
+     {
+      display: flex;
+    }
+    
+    .main-header {
+      flex-direction: column;
+      align-items: center;
+    }	
+    
+    }
+    
+    @media (min-width: 1175px) {
+    
+     .main-header {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+        
+    } */
