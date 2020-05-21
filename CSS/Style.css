@@ -321,7 +321,12 @@ a:hover:after {
         font-size: 28px;
         font-weight: 700;
         letter-spacing: 3px;
-        margin-left: 15px; }
+        margin-left: 15px;
+        transition: background-color 0.2s linear, transform 0.2s linear; }
+        #order-header .overflow .content a:hover {
+          transform: scale(1.05);
+          background-color: #e99b5c;
+          transition: background-color 0.2s linear, transform 0.2s linear; }
 
 #QuickIcons {
   display: flex;
@@ -339,6 +344,12 @@ a:hover:after {
     #QuickIcons .icon .fas {
       font-size: 80px;
       margin-bottom: 15px; }
+
+.cake {
+  transition: transform 0.2s linear; }
+  .cake:hover {
+    transform: scale(1.2);
+    transition: transform 0.2s linear; }
 
 #Products {
   height: 800px;
