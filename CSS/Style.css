@@ -1,4 +1,270 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Yellowtail&display=swap");
+header {
+  background-color: #52658f;
+  height: 160px;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px 0; }
+
+/* Added styling for the new container -Luke */
+.header-container {
+  display: flex;
+  /* Margin set to 0 auto will always center 
+    the element on the page giving equel margins to 
+    its left and right - Luke */
+  margin: 0 auto;
+  /* Given the width around 80% or the screen width
+    this allows us a clear width to aligh items on the page as we
+    can now set any container to this value to align elements 
+    vertically - Luke */
+  width: 80%;
+  justify-content: space-between; }
+
+.name {
+  font-size: 100px;
+  margin-top: 0;
+  margin-bottom: 0; }
+
+.main-nav {
+  display: flex;
+  /* Ive adjusted this from baseline to center so they line up with the concept - Luke */
+  /* align-items: baseline; */
+  align-items: center;
+  flex-basis: auto;
+  list-style: none;
+  /* Set the ul to take up around 70% of its container
+    judging this again based by eye on the concept - Luke */
+  width: 65%;
+  /* By adding justify content to the flex box we can choose how
+    items are space out, so between will space the items evenly
+    with the gaps between them - Luke */
+  justify-content: space-between;
+  /* Added a little extra padding between the logo and the nav ul - Luke */
+  padding-left: 60px; }
+
+.ul,
+.li {
+  list-style: none;
+  align-items: baseline;
+  flex: 1; }
+
+a {
+  text-decoration: none; }
+
+footer {
+  display: flex;
+  background-color: #52658f;
+  color: #f7f5e6;
+  /* changed to space between to fit the frame of the container - Luke */
+  justify-content: space-between;
+  /* justify-content: center; */
+  flex-direction: column;
+  /* Added height to match as close as possible - Luke */
+  height: 400px;
+  /* Added padding to give even space between top and bottom of the container - Luke */
+  padding: 20px 0; }
+
+/* ----------------------- */
+/* .footer-nav,
+li         {
+    flex-direction: column;
+    padding-left: 0;
+} */
+.footer-nav {
+  flex-direction: column;
+  padding-left: 0;
+  /* Used list-style-type to remove the bullet points from the ul */
+  list-style-type: none; }
+
+/* I have rectified this, by adding the comma between the two you are targeting 
+both elements seperatly, without the comma you are directing the styling
+to target the li.
+But what you wanted was to remove the padding of the ul and set its flex direction to column
+_ Luke */
+/* ------------------------ */
+.cols {
+  display: flex;
+  /* Have changed this to space-between so the elements are pushed to the edge 
+    of the container - Luke */
+  justify-content: space-between;
+  /* justify-content: space-around; */
+  /* Ive added the width to this cols element to align it with the width of the navbar
+    and given it margin of 0 auto to place it on the middle of the page - Luke */
+  width: 80%;
+  margin: 0 auto; }
+
+/* Added bigger margin under the h3 in the footer - Luke */
+.cols h3 {
+  margin-bottom: 30px; }
+
+/* Pseudo element for the > in the html, styled to be bold compared to the a tag itself - Luke */
+.col-3 ul li a::before {
+  content: '>';
+  font-weight: bold; }
+
+/* Ive added a bigger line height to make it closer to the concept - Luke */
+footer .cols p,
+footer .cols a {
+  line-height: 32px;
+  font-size: 1.5rem; }
+
+footer p {
+  margin-bottom: 0; }
+
+/* added the styling to the a tags of col-3 to match the styling of the p
+in other columns - Luke */
+.col-3 a {
+  font-weight: 200;
+  font-size: 18px;
+  letter-spacing: 2px; }
+
+/* Added a bigger margin to adjust the sppace between the details  */
+.col-1 p {
+  margin-bottom: 30px; }
+
+.copy {
+  align-self: center;
+  justify-content: center; }
+
+h2 {
+  text-align: center;
+  color: #52658f;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 2px; }
+
+h3 {
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: 0; }
+
+.information h3 {
+  width: 80%;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  color: #52658f; }
+
+footer h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 2px; }
+
+/* Ive added a dont weight to the p elements to make them skinnier by adjusting the font weight
+_ Luke */
+.footer p {
+  font-weight: 200;
+  font-size: 18px;
+  letter-spacing: 2px; }
+
+.main-nav .fas {
+  color: orange;
+  font-size: xx-large;
+  border: #343957 solid 15px;
+  border-radius: 50%;
+  text-align: center;
+  background-color: #343957; }
+
+.about img {
+  width: auto;
+  max-width: 300px;
+  max-height: 300px;
+  border: white solid 3px;
+  border-radius: 50%;
+  margin: 2%; }
+
+.about {
+  display: flex;
+  justify-content: center; }
+
+.text {
+  max-width: 600px;
+  margin: 2%; }
+
+.circle1 {
+  /* Create the circle */
+  width: 150px;
+  height: 150px;
+  border: 3px solid white;
+  border-radius: 50%;
+  background-color: #f7f5e6; }
+
+.circle2 {
+  /* Create the circle */
+  width: 200px;
+  height: 200px;
+  border: 3px solid white;
+  border-radius: 50%;
+  background-color: #52658f; }
+
+/* ---- Navigation ---- */
+.name {
+  font-family: 'Yellowtail', cursive;
+  color: #f7f5e6;
+  text-align: center;
+  font-weight: 300; }
+
+.main-nav a {
+  font-size: 1.4em;
+  color: #f7f5e6;
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+  text-align: center; }
+
+.main-nav .phone .fas {
+  transform: scale(1.4); }
+
+/* Pseudo-classes ------------------ */
+a:link {
+  color: #f7f5e6; }
+
+a:visited {
+  color: #f7f5e6; }
+
+a:hover {
+  color: #f7f5e6; }
+
+.underline:after {
+  content: "";
+  display: block;
+  width: 0;
+  border-bottom: 3px solid;
+  margin: 2px auto;
+  transition: all 0.3s linear 0s; }
+
+a:hover:after {
+  color: orange;
+  width: 100%; }
+
+/* ================================= 
+  Media Queries
+==================================== 
+ @media (min-width: 769px) {
+
+    .main-header,
+    .main-nav, 
+     {
+      display: flex;
+    }
+    
+    .main-header {
+      flex-direction: column;
+      align-items: center;
+    }	
+    
+    }
+    
+    @media (min-width: 1175px) {
+    
+     .main-header {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+        
+    } */
 #order-header {
   width: 100%;
   height: 560px;
@@ -18,7 +284,7 @@
       width: 90%;
       height: 300%;
       position: absolute;
-      left: -30%;
+      left: -31%;
       bottom: -100%;
       z-index: 1; }
     #order-header .overflow .content {
@@ -26,7 +292,7 @@
       flex-direction: column;
       position: absolute;
       z-index: 2;
-      left: 170px;
+      left: 196px;
       height: 100%;
       width: 820px; }
       #order-header .overflow .content h1 {
@@ -152,6 +418,7 @@
 
 #Reviews {
   padding: 0 100px;
+  margin-bottom: 100px;
   text-align: center; }
   #Reviews h3 {
     font-size: 2rem;
@@ -194,7 +461,7 @@
     justify-content: center;
     color: #343957; }
     #Reviews .review-slick .review-item .review p {
-      font-size: 1.8rem;
+      font-size: 1.5rem;
       font-weight: 200;
       width: 80%;
       margin-left: 30px;
