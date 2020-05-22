@@ -13,6 +13,21 @@
       list-style-type: none;
       display: flex;
       justify-content: center;
+      padding: 0 50px;
+      height: 50px;
+      width: 30%;
+      margin-left: auto;
+      margin-right: auto;
+      transition: transform .2s ease;
+      &:hover {
+        transform: scale(1.2);
+        transition: transform .2s ease;
+      }
+      button {
+        &:hover {
+          background-color: $Contrast;
+        }
+      }
       .slick-active {
         button {
           background-color: $Main;
@@ -22,6 +37,8 @@
         }
       }
       li {
+        display: flex;
+        align-items: center;
         margin: 0 50px;
         button {
             font-size: 0;

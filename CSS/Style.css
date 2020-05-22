@@ -166,7 +166,12 @@ _ Luke */
   border: #343957 solid 15px;
   border-radius: 50%;
   text-align: center;
-  background-color: #343957; }
+  background-color: #343957;
+  transition: transform .2s ease; }
+
+header .main-nav .fas:hover {
+  transform: scale(1.5);
+  box-shadow: 0px 5px 40px -10px #f7882f; }
 
 .about img {
   width: auto;
@@ -321,12 +326,10 @@ a:hover:after {
         font-size: 28px;
         font-weight: 700;
         letter-spacing: 3px;
-        margin-left: 15px;
-        transition: background-color 0.2s linear, transform 0.2s linear; }
+        margin-left: 15px; }
         #order-header .overflow .content a:hover {
-          transform: scale(1.05);
           background-color: #e99b5c;
-          transition: background-color 0.2s linear, transform 0.2s linear; }
+          box-shadow: 0px 5px 40px -10px #f7882f; }
 
 #QuickIcons {
   display: flex;
@@ -351,6 +354,18 @@ a:hover:after {
     transform: scale(1.2);
     transition: transform 0.2s linear; }
 
+.pastries {
+  transition: transform 0.2s linear; }
+  .pastries:hover {
+    transform: scale(1.2);
+    transition: transform 0.2s linear; }
+
+.bread {
+  transition: transform 0.2s linear; }
+  .bread:hover {
+    transform: scale(1.2);
+    transition: transform 0.2s linear; }
+
 #Products {
   height: 800px;
   background-color: #f7f5e6;
@@ -368,7 +383,10 @@ a:hover:after {
     color: #f7f5e6;
     font-size: 50px;
     padding: 5px;
-    transform: translateY(-30px); }
+    transform: translateY(-30px);
+    cursor: pointer; }
+    #Products .slick-arrow:hover {
+      background-color: #2f3950; }
     #Products .slick-arrow .fa-chevron-left {
       transform: translateX(-5px); }
     #Products .slick-arrow .fa-chevron-right {
@@ -385,7 +403,7 @@ a:hover:after {
       font-size: 32px;
       font-weight: 700;
       letter-spacing: 3px;
-      margin: 0 auto 100px;
+      margin: 0 auto;
       color: #52658f; }
   #Products a {
     text-decoration: none;
@@ -399,20 +417,32 @@ a:hover:after {
     font-weight: 700;
     letter-spacing: 3px;
     margin: 0 auto; }
+    #Products a:hover {
+      background-color: #2f3950;
+      box-shadow: 0px 5px 40px -10px #52658f; }
   #Products .slick-carousel {
     width: 95%;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin: 0 auto; }
+    margin: 0 auto;
+    margin-top: 20px;
+    height: 600px; }
+    #Products .slick-carousel .slick-list {
+      height: 600px;
+      padding: 30px 0; }
     #Products .slick-carousel .product {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      align-items: center; }
+      align-items: center;
+      padding-top: 50px;
+      transition: all .2s linear; }
+      #Products .slick-carousel .product:hover {
+        transform: scale(1.1);
+        transition: all .2s linear; }
       #Products .slick-carousel .product h3 {
-        margin-top: 25px;
-        margin-bottom: 75px; }
+        margin-top: 25px; }
       #Products .slick-carousel .product:focus {
         outline: none; }
       #Products .slick-carousel .product span {
@@ -439,12 +469,25 @@ a:hover:after {
   #Reviews .review-slick .slick-dots {
     list-style-type: none;
     display: flex;
-    justify-content: center; }
+    justify-content: center;
+    padding: 0 50px;
+    height: 50px;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    transition: transform .2s ease; }
+    #Reviews .review-slick .slick-dots:hover {
+      transform: scale(1.2);
+      transition: transform .2s ease; }
+    #Reviews .review-slick .slick-dots button:hover {
+      background-color: #343957; }
     #Reviews .review-slick .slick-dots .slick-active button {
       background-color: #52658f; }
       #Reviews .review-slick .slick-dots .slick-active button:focus {
         outline: none; }
     #Reviews .review-slick .slick-dots li {
+      display: flex;
+      align-items: center;
       margin: 0 50px; }
       #Reviews .review-slick .slick-dots li button {
         font-size: 0;

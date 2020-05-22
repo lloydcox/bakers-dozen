@@ -4,7 +4,7 @@ $(document).ready(function(){
       infinite: true,
       slidesToShow: 3,
       slidesToScroll: 3,
-      autoplaySpeed: 3000,
+      autoplaySpeed: 4000,
       speed: 1000,
       appendArrows: $('#Products'),
       prevArrow: '<button type="button" class="slick-prev"><i class="fas fa-chevron-left"></i></button>',
@@ -18,7 +18,7 @@ $(document).ready(function(){
       infinite: true,
       slidesToShow: 1,
       slidesToScroll: 1,
-      autoplaySpeed: 3000,
+      autoplaySpeed: 4000,
       speed: 1000,
       arrows: false,
       dots: true

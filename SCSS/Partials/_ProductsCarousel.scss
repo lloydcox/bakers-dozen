@@ -16,6 +16,10 @@
     font-size: 50px;
     padding: 5px;
     transform: translateY(-30px);
+    cursor: pointer;
+          &:hover {
+            background-color: $Main-hvr;
+          }
     .fa-chevron-left {
       transform: translateX(-5px);
     }
@@ -36,7 +40,7 @@
       font-size: 32px;
       font-weight: 700;
       letter-spacing: 3px;
-      margin: 0 auto 100px;
+      margin: 0 auto;
       color: $Main;
     }
   }
@@ -52,6 +56,10 @@
     font-weight: 700;
     letter-spacing: 3px;
     margin: 0 auto;
+          &:hover {
+            background-color: $Main-hvr;
+            box-shadow: 0px 5px 40px -10px $Main;
+          }
   }
   .slick-carousel {
     width: 95%;
@@ -59,14 +67,25 @@
     justify-content: space-around;
     align-items: center;
     margin: 0 auto;
+    margin-top: 20px;
+    height: 600px;
+    .slick-list {
+      height: 600px;
+      padding: 30px 0;
+    }
     .product {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      padding-top: 50px;
+      transition: all .2s linear;
+          &:hover {
+            transform: scale(1.1);
+            transition: all .2s linear;
+          }
       h3 {
         margin-top: 25px;
-        margin-bottom: 75px;
       }
       &:focus {
         outline: none;

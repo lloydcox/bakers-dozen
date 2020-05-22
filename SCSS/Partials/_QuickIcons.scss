@@ -25,3 +25,17 @@
       transition: transform 0.2s linear;
   }
 }
+.pastries {
+  transition: transform 0.2s linear;
+&:hover {
+    transform: scale(1.2);
+    transition: transform 0.2s linear;
+}
+}
+.bread {
+  transition: transform 0.2s linear;
+&:hover {
+    transform: scale(1.2);
+    transition: transform 0.2s linear;
+}
+}
