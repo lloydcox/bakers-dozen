@@ -1,7 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Yellowtail&display=swap');
-@import 'Partials/Attributes', 'Partials/Lloyd', 'Partials/Header', 'Partials/QuickIcons', 'Partials/ProductsCarousel', 'Partials/Reviews';
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Yellowtail&display=swap");
+@import "Partials/Attributes", "Partials/Lloyd", "Partials/Header",
+  "Partials/QuickIcons", "Partials/ProductsCarousel", "Partials/Reviews";
 
-// To access fonts, use below styles 
+// To access fonts, use below styles
 
 // Roboto is main text, adjust font weight to fit titles and paragraphs
 // font-family: 'Roboto', sans-serif;
@@ -9,13 +10,30 @@
 // Yellowtail is the fancy font used for the name 'Bakers Dozen'
 // font-family: 'Yellowtail', cursive;
 
-// To access page colours use the variables from the attributes partial 
+// To access page colours use the variables from the attributes partial
 
-*{
-    font-family: 'Roboto', sans-serif;
-    box-sizing: border-box;
+* {
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+  h1 {
+    font-weight: 300;
+  }
+  h3 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+  }
+  h4 {
+    font-size: 1.125rem;
+    font-weight: 700;
+  }
+  p,
+  a {
+    font-size: 1.125rem;
+    font-weight: 200;
+  }
 }
 
 .overflow-hidden {
-    overflow: hidden;
+  overflow: hidden;
 }

@@ -13,7 +13,7 @@
                 <span><p>&rdquo;</p></span>
             </div>
             <div class="customer">
-                <h4>- Luke Youngman</h4>
+                <h4>&mdash; Luke Youngman</h4>
             </div>
         </div>
 
@@ -28,7 +28,7 @@
                 <span><p>&rdquo;</p></span>
             </div>
             <div class="customer">
-                <h4>- Lloyd Cox</h4>
+                <h4>&mdash; Lloyd Cox</h4>
             </div>
         </div>
 
@@ -43,7 +43,7 @@
                 <span><p>&rdquo;</p></span>
             </div>
             <div class="customer">
-                <h4>- Matthew Wilson</h4>
+                <h4>&mdash; Matthew Wilson</h4>
             </div>
         </div>
                 
@@ -58,7 +58,7 @@
                 <span><p>&rdquo;</p></span>
             </div>
             <div class="customer">
-                <h4>- Adrian Sweeney</h4>
+                <h4>&mdash; Adrian Sweeney</h4>
             </div>
         </div>
     </div>

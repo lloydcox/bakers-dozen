@@ -1,5 +1,5 @@
 <?php 
-$title = "Baker's Dozen - Home";
+$title = "Baker's Dozen - Our Products";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -10,7 +10,7 @@ include 'PHP/Head_Meta.php'
 <?php 
 include 'PHP/Header.php';
 
-include 'PHP/Main.php';
+include 'PHP/Internal/Products_main.php';
 
 include 'PHP/Footer.php';
 

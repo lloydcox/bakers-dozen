@@ -1,23 +1,22 @@
 #Reviews {
-  padding: 0 100px;
-  margin-bottom: 100px;
+  padding: 90px 6.25rem;
   h3 {
-    font-size: 2rem;
-    font-weight: 700;
-    letter-spacing: 3px;
     color: $Main;
   }
   text-align: center;
+  .slick-list {
+    margin-right: 50px;
+  }
   .review-slick {
     .slick-dots {
       list-style-type: none;
       display: flex;
       justify-content: center;
       padding: 0 50px;
-      height: 50px;
-      width: 30%;
+      width: 250px;
       margin-left: auto;
       margin-right: auto;
+      margin-bottom: 0;
       transition: transform .2s ease;
       &:hover {
         transform: scale(1.2);
@@ -39,7 +38,7 @@
       li {
         display: flex;
         align-items: center;
-        margin: 0 50px;
+        margin: 0 30px;
         button {
             font-size: 0;
           border: none;
@@ -58,15 +57,14 @@
             outline: none;
           }
       .customer {
-        width: 100%;
         display: flex;
         justify-content: flex-end;
         h4 {
-          font-size: 1.9rem;
+          text-transform: uppercase;
           font-weight: 600;
-          letter-spacing: 3px;
+          letter-spacing: 2px;
           color: $Main;
-          margin-right: 150px;
+          margin-right: 100px;
         }
       }
       .review {
@@ -74,8 +72,6 @@
         justify-content: center;
         color: $Contrast;
         p {
-          font-size: 1.5rem;
-          font-weight: 200;
           width: 80%;
           margin-left: 30px;
           margin-top: 60px;

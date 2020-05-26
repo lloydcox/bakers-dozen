@@ -3,18 +3,13 @@
   color: $Main;
   width: 100%;
   justify-content: space-around;
-  padding: 150px 90px 80px;
+  padding: 6.25rem 8.2479375rem;
   .icon {
     text-align: center;
-    width: 380px;
-    h3 {
-      font-size: 2rem;
-      font-weight: 700;
-      letter-spacing: 3px;
-    }
+    width: 23.75rem;
     .fas {
-      font-size: 80px;
-      margin-bottom: 15px;
+      font-size: 3.75rem;
+      margin-bottom: 1.875rem;
     }
   }
 }

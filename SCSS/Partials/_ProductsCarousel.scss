@@ -1,30 +1,29 @@
 #Products {
-  height: 800px;
+  height: 37.5rem;
   background-color: $Cream;
-  margin-bottom: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 100px;
+  padding: 2rem 6.25rem;
   .slick-arrow {
-    height: 75px;
-    width: 75px;
+    height: 3.125rem;
+    width: 3.125rem;
     border-radius: 100%;
     border: none;
     background-color: $Main;
     color: $Cream;
-    font-size: 50px;
-    padding: 5px;
-    transform: translateY(-30px);
+    font-size: 2rem;
+    padding: 0.3125rem;
+    transform: translateY(-1.875rem);
     cursor: pointer;
           &:hover {
             background-color: $Main-hvr;
           }
     .fa-chevron-left {
-      transform: translateX(-5px);
+      transform: translateX(-0.15625rem);
     }
     .fa-chevron-right {
-      transform: translateX(5px);
+      transform: translateX(0.15625rem);
     }
     &:focus {
       outline: none;
@@ -33,13 +32,10 @@
   .slider {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     width: 90%;
     height: 100%;
     h3 {
-      font-size: 32px;
-      font-weight: 700;
-      letter-spacing: 3px;
       margin: 0 auto;
       color: $Main;
     }
@@ -47,12 +43,11 @@
   a {
     text-decoration: none;
     text-align: center;
-    padding: 25px 0;
-    width: 440px;
+    padding: 1.1359375rem 0;
+    width: 19.6875rem;
     color: $Background;
     background-color: $Main;
-    border-radius: 50px;
-    font-size: 28px;
+    border-radius: 3.125rem;
     font-weight: 700;
     letter-spacing: 3px;
     margin: 0 auto;
@@ -67,25 +62,24 @@
     justify-content: space-around;
     align-items: center;
     margin: 0 auto;
-    margin-top: 20px;
-    height: 600px;
+    margin-top: 1.25rem;
+    height: 21.875rem;
     .slick-list {
-      height: 600px;
-      padding: 30px 0;
+      height: 25.89125rem;
     }
     .product {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      padding-top: 50px;
+      padding-top: 3.125rem;
       transition: all .2s linear;
           &:hover {
             transform: scale(1.1);
             transition: all .2s linear;
           }
       h3 {
-        margin-top: 25px;
+        margin-top: 1.5625rem;
       }
       &:focus {
         outline: none;
@@ -93,15 +87,15 @@
       span {
         display: flex;
         justify-content: center;
-        border: 7px solid $Main;
-        width: 390px;
-        height: 390px;
+        border: 0.3125rem solid $Main;
+        width: 17.8125rem;
+        height: 17.8125rem;
         border-radius: 100%;
         img {
           height: 100%;
         }
         .cupcakes {
-          transform: translateX(-31px);
+          transform: translateX(-1.9375rem);
         }
       }
     }

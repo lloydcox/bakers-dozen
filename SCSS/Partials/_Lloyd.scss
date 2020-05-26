@@ -1,6 +1,6 @@
 header {
     background-color: #52658f;
-    height: 160px;
+    height: 110px;
     display: flex;  
     justify-content: space-evenly; 
     padding: 10px 0; 
@@ -12,17 +12,18 @@ header {
     /* Margin set to 0 auto will always center 
     the element on the page giving equel margins to 
     its left and right - Luke */
-    margin: 0 auto;
+    margin: 0 8.75rem;
     /* Given the width around 80% or the screen width
     this allows us a clear width to aligh items on the page as we
     can now set any container to this value to align elements 
     vertically - Luke */
     width: 80%;
     justify-content: space-between;
+    align-items: center;
 }
 
 .name {
-    font-size: 100px;
+    font-size: 4.375rem;
     // letter-spacing: 1px;
     margin-top: 0;
     margin-bottom: 0;
@@ -66,9 +67,9 @@ footer {
     /* justify-content: center; */
     flex-direction: column;
     /* Added height to match as close as possible - Luke */
-    height: 400px;
+    height: 300px;
     /* Added padding to give even space between top and bottom of the container - Luke */
-    padding:  20px 0;
+    padding:  25px 0;
 }
 
 /* ----------------------- */
@@ -103,13 +104,13 @@ _ Luke */
     /* Ive added the width to this cols element to align it with the width of the navbar
     and given it margin of 0 auto to place it on the middle of the page - Luke */
     width: 80%;
-    margin: 0 auto;
+    margin: 0 8.75rem;
 }
 
 
 /* Added bigger margin under the h3 in the footer - Luke */
 .cols h3 {
-    margin-bottom: 30px;
+    margin-bottom: 25px;
 }
 
 /* Pseudo element for the > in the html, styled to be bold compared to the a tag itself - Luke */
@@ -121,19 +122,21 @@ _ Luke */
 /* Ive added a bigger line height to make it closer to the concept - Luke */
 footer .cols p,
 footer .cols a {
-    line-height: 32px;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
 }
 
 footer p {
     margin-bottom: 0;
 }
 
+footer .copy p {
+    font-size: .9rem;
+}
 /* added the styling to the a tags of col-3 to match the styling of the p
 in other columns - Luke */
 .col-3 a {
     font-weight: 200;
-    font-size: 18px;
+    font-size: 1.1rem;
     letter-spacing: 2px;
 }
 
@@ -167,14 +170,14 @@ h3 {
     width: 80%;
     text-align: center;
     margin: 0 auto;
-    font-size: 2rem;
+    font-size: 1.3rem;
     font-weight: 700;
     letter-spacing: 3px;
     color: $Main;
   }
 
   footer h3 {
-    font-size: 2rem;
+    font-size: 1.3rem;
     font-weight: 700;
     letter-spacing: 2px;
   }
@@ -183,22 +186,25 @@ h3 {
 _ Luke */
 .footer p {
     font-weight: 200;
-    font-size: 18px;
+    font-size: 1.1rem;
     letter-spacing: 2px;
 }
 
 // Added .main-nav to target onyl the icon in the navbar - Luke
 .main-nav .fas  {
     color: orange;
-    font-size: xx-large;
+    font-size: 35px;
     border: #343957 solid 15px;
     border-radius: 50%;
     text-align: center;
     background-color: #343957;
     transition: transform .2s ease;
 }
+.nav-weight {
+    font-weight: 500;
+}
 header .main-nav .fas:hover {
-    transform: scale(1.5);
+    transform: scale(1.2);
     box-shadow: 0px 5px 40px -10px $Secondary;
   }
 
@@ -254,16 +260,11 @@ header .main-nav .fas:hover {
 }
 
 .main-nav a {
-	font-size: 1.4em;
+	font-size: 1rem;
 	color: #f7f5e6;
     text-transform: uppercase;
     letter-spacing: 1.3px;
     text-align: center;
-}
-
-// Adjusted the phone icon size
-.main-nav .phone .fas {
-    transform: scale(1.4);
 }
 
 /* Pseudo-classes ------------------ */
