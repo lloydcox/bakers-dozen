@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Bakers Dozen</title>
+    <meta name="Bakers Dozen" content="Bakers Dozen simple website">
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> -->
+    <!-- <script src="script.js"></script> -->
+  </head>
+  <body>
+    <header class="main-header">
+        <!-- Added a div container to isolate the elements in the top bar -Luke -->
+        <div class="header-container">
+          <h1 class="name">Baker's Dozen</h1>
+          <ul class="main-nav">
+              <li><a href="#">About</a></li>
+              <li><a href="#">Products</a></li>
+              <li><a href="#">Testimonials</a></li>
+              <li><a href="#">Order</a></li>
+              <li><a href="#"><i class="fas fa-phone"></i></a></li>
+          </ul>
+        </div>   
+      </header>
+
+    <div class="contact">
+        <form action="#">
+      
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name.."><br>
+      
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name.."><br>
+
+          <label for="email">Email</label>
+          <input type="text" id="email" name="email" placeholder="Your Email address.."><br>
+
+          <label for="phone">Phone Number</label>
+          <input type="text" id="phone" name="phone" placeholder="Your Phone Number.."><br>
+      
+          <label>I have read and agree to the GDPR compliance</label>
+          <input type = "checkbox"
+              id = "GDPR"
+              value = "Agree"/><br>
+        
+         <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      
+          <input type="submit" value="Submit">
+      
+        </form>
+      </div>
+
+      <footer class="footer">
+        <div class="cols">
+            <div class="col-1">
+              <h3>Adress</h3>
+              <!-- Ive split this into 2 p tags, this way you have more control on space 
+              between them in css -Luke -->
+              <p>107 Gloucester Street<br>Norwhich, Norfolk<br>NR2 2DY</p>
+              <p>01603 123 987<br>info@bakersdozen.co.uk</p>
+            </div>
+  
+            <div class="col-2">
+              <h3>Opening Times</h3>
+              <p>Monday - Friday 8AM - 4PM <br>Saturday 8AM - 3PM<br>Closed Sunday</p>
+            </div>
+  
+            <div class="col-3">
+              <h3>Sections</h3>
+                <ul class="footer-nav">
+                  <!-- Removed the > and added them using a pseudo element in the styling - Luke -->
+                  <li><a href="#"> About</a></li>
+                  <li><a href="#"> Products</a></li>
+                  <li><a href="#"> Testimonials</a></li>
+                  <li><a href="#"> Order</a></li>
+                  <li><a href="#"> Privacy Policy</a></li>
+              </ul>
+            </div>
+        </div>
+  
+          <div class="copy">
+            <p>Copyright &#169; Baker's Dozen. All Rights Reserved 2019</p>
+          </div>
+        
+      </footer>
+    <script src="https://kit.fontawesome.com/4f920b82bf.js" crossorigin="anonymous"></script>
+  </body>
+</html>
