@@ -4,11 +4,15 @@
     <meta charset="utf-8">
     <title>Bakers Dozen</title>
     <meta name="Bakers Dozen" content="Bakers Dozen simple website">
-    <link href="styles.css" rel="stylesheet" type="text/css">
+    <link href="contact.css" rel="stylesheet" type="text/css">
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> -->
     <!-- <script src="script.js"></script> -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+    integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+    crossorigin=""/>
   </head>
-  <body>
+  <body class="site">
+
     <header class="main-header">
         <!-- Added a div container to isolate the elements in the top bar -Luke -->
         <div class="header-container">
@@ -23,33 +27,56 @@
         </div>   
       </header>
 
+      <h2>Get in touch today!</h2>
+
     <div class="contact">
         <form action="#">
-      
-          <label for="fname">First Name</label>
-          <input type="text" id="fname" name="firstname" placeholder="Your name.."><br>
-      
-          <label for="lname">Last Name</label>
-          <input type="text" id="lname" name="lastname" placeholder="Your last name.."><br>
+            <div class="row1">
+                <div class="col-a">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                </div>
+                <div class="col-b">
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                </div>
+            </div>
 
-          <label for="email">Email</label>
-          <input type="text" id="email" name="email" placeholder="Your Email address.."><br>
+            <div class="row2">
 
-          <label for="phone">Phone Number</label>
-          <input type="text" id="phone" name="phone" placeholder="Your Phone Number.."><br>
-      
-          <label>I have read and agree to the GDPR compliance</label>
-          <input type = "checkbox"
-              id = "GDPR"
-              value = "Agree"/><br>
+                <div class="col-c">
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="email" placeholder="Your Email address..">
+                </div>
+                
+                <div class="col-d">
+                    <label for="phone">Phone Number</label>
+                    <input type="text" id="phone" name="phone" placeholder="Your Phone Number..">
+                </div>
+            </div>
+
+            <div class="row3"> 
+                <div class="col-e">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" placeholder="Subject..">
+                </div>
+            </div>    
+
+            <div class="row4">
+                <textarea id="subject" name="subject" placeholder="Please tell us what you'd like to order.." style="height:150px"></textarea>
+            </div>
+
+            <label>I have read and agree to the GDPR compliance</label>
+            <input type = "checkbox"
+                id = "GDPR"
+                value = "Agree"/><br>
         
-         <label for="subject">Subject</label>
-          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-      
-          <input type="submit" value="Submit">
+            <input class="button" type="submit" value="Submit">
       
         </form>
       </div>
+
+      <div id="mapid"></div>
 
       <footer class="footer">
         <div class="cols">

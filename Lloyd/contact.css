@@ -1,12 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Yellowtail&display=swap");
 
-/*CSS File*/
+/*Contact CSS File*/
 /* *{border: 1px solid black;} */
 /* -- Font styles --*/
 
 * {
   font-family: 'Roboto', sans-serif;
   box-sizing: border-box; }
+
+.Site {
+    display: flex;
+    flex-direction: column;
+  }
+  
 
 /* Roboto is main text, adjust font weight to fit titles and paragraphs */
 /* font-family: 'Roboto', sans-serif; 
@@ -32,7 +38,6 @@ Cream : #f7f5e6;
 header {
     background-color: #52658f;
     height: 100px;
-    
     display: flex;  
     justify-content: space-evenly;  
 }
@@ -98,6 +103,114 @@ footer {
     padding: 10px 0;
     margin-top: auto;
 }
+/* contact page CSS */
+
+.contact {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 82px;
+    align-items: center;
+    
+}
+
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+    color: #52658f;
+    font-weight: 500;
+    margin: 1px;
+    align-items: center;
+  }
+
+
+input {
+    align-content: center;
+}
+
+.row1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border: #52658f 1px solid;
+    padding: 32px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.col-a {
+    display: flex;
+    flex-direction: column;
+    padding-right: 10px;
+    padding-bottom:  10px;
+}
+
+.col-b {
+    display: flex;
+    flex-direction: column;
+    padding-bottom:  10px;
+    
+}
+
+.row2 {
+    display: flex;
+    flex-direction: row;
+    border: #52658f 1px solid;
+    justify-content: center;
+    padding: 32px;
+    width: 100%;
+    height: 100%;
+    text-align: center;    
+}
+
+.col-c {
+    display: flex;
+    flex-direction: column;
+    padding-right: 10px;
+    padding-bottom:  10px;
+}
+
+.col-d {
+    display: flex;
+    flex-direction: column;
+    padding-bottom:  10px;
+}
+
+.row3 {
+   text-align: center;
+   border: #52658f 1px solid;
+   width: 100%;
+   height: 100%;
+   padding: 32px;
+}
+
+.col-e {
+    display: flex;
+    flex-direction: column;
+    padding-bottom:  10px;
+}
+
+.row4 {
+    width: 100%;
+    border: #52658f 1px solid;
+    resize: none;
+    height: 100%;
+    width: 100%;
+    padding: 32px;
+}
+
+textarea {
+    width: 100%;
+    height: 300px;
+}
+
 
 
 /* ----------------------- */
@@ -170,15 +283,6 @@ in other columns - Luke */
     justify-content: center;
 }
 
-.border {
-       
-    border: 1.5px solid #52658f;
-    position: relative;
-    width: 30%;
-    align-self: center;
-    margin-bottom: 35px;
-}
-
 
 /* Ive added a font weight to the p elements to make them skinnier by adjusting the font weight
 _ Luke */
@@ -186,6 +290,7 @@ _ Luke */
     font-weight: 200;
     font-size: 18px;
     letter-spacing: 2px;
+    
 }
 
 .fas  {
@@ -197,14 +302,6 @@ _ Luke */
     background-color: #343957;
 }
 
-.about  {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-top: 100px;
-    padding-bottom: 100px;
-         
-}
 
 h2 {
     text-align: center;
@@ -214,80 +311,6 @@ h2 {
     letter-spacing: 2px;  
     border-top: #52658f;
     flex-basis: 100%;
-}
-
-.contents {
-    display: flex;
-    justify-content: space-around;
-}
-
-.circles {
-    position: relative;  
-
-}
-
-/* image div - Luke*/
-.img-circle {
-    width: 325px;
-    height: 325px;
-    border: white solid 5px;
-    border-radius: 50%;
-    overflow: hidden;
-    position: absolute;
-    z-index: 3;
-}
-
-img {
-    height: 110%;
-    transform: translate(-70px, -30px);  
-}
-/* image div - Luke */
-
-.circle1 {
-    /* Create the circle */
-    width: 200px;
-    height: 200px;
-    border: 5px solid white;
-    border-radius: 50%;
-    background-color: #f7f5e6;
-    position: absolute;
-    left: 150px;
-    top: -15px;
-    z-index: 1;
-    
-  }
-
-.circle2 {
-    /* Create the circle */
-    width: 275px;
-    height: 275px;
-    border: 5px solid white;
-    border-radius: 50%;
-    background-color: #52658f;
-    position: absolute;
-    left: 125px;
-    top: 100px;
-    z-index: 2;
-  }
-
-
-.about p {
-    letter-spacing: 1.3px;
-    font-weight: 300;
-    color: #52658f;
-}
-
-.text {
-    max-width: 600px;
-    margin: 2%;
-    font-size: 1.25em;
-}
-
-.order {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    padding: 50px;
 }
 
 h3 {
