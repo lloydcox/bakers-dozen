@@ -45,6 +45,6 @@
             </div>
 
         </div>
-        <a class="button" href="#">FIND OUT MORE</a>
+        <a class="button" href="Products.php">FIND OUT MORE</a>
     </div>
 </div>

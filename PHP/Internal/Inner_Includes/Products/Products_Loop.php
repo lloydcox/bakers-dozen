@@ -1,5 +1,6 @@
 <div id="Product-Section">
 <span class="divider"></span>
+<h3 class="title">BREADS</h3>
     <div class="products">
         <?php
         foreach ($Products as $Product) {
@@ -27,6 +28,7 @@
         ?>
     </div>
     <span class="divider"></span>
+    <h3 class="title">CAKES</h3>
     <div class="products">
         <?php
         foreach ($Products as $Product) {
@@ -54,6 +56,7 @@
         ?>
     </div>
     <span class="divider"></span>
+    <h3 class="title">PASTRIES</h3>
     <div class="products">
         <?php
         foreach ($Products as $Product) {
@@ -81,6 +84,7 @@
         ?>
     </div>
     <span class="divider"></span>
+    <h3 class="title">PIES</h3>
     <div class="products">
         <?php
         foreach ($Products as $Product) {
@@ -108,6 +112,7 @@
         ?>
     </div>
     <span class="divider"></span>
+    <h3 class="title">PIZZAS</h3>
     <div class="products">
         <?php
         foreach ($Products as $Product) {
@@ -135,6 +140,7 @@
         ?>
     </div>
     <span class="divider"></span>
+    <h3 class="title">PRETZELS</h3>
     <div class="products">
         <?php
         foreach ($Products as $Product) {

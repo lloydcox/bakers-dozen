@@ -1,6 +1,9 @@
 #Product-Section {
     margin: 50px 8.75rem;
     text-align: center;
+    .title {
+       padding-top: 20px;
+    }
     .divider {
         display: block;
         content: "";

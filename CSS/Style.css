@@ -100,7 +100,7 @@ _ Luke */
 
 /* Pseudo element for the > in the html, styled to be bold compared to the a tag itself - Luke */
 .col-3 ul li a::before {
-  content: '>';
+  content: ">";
   font-weight: bold; }
 
 /* Ive added a bigger line height to make it closer to the concept - Luke */
@@ -112,7 +112,7 @@ footer p {
   margin-bottom: 0; }
 
 footer .copy p {
-  font-size: .9rem; }
+  font-size: 0.9rem; }
 
 /* added the styling to the a tags of col-3 to match the styling of the p
 in other columns - Luke */
@@ -170,7 +170,7 @@ _ Luke */
   border-radius: 50%;
   text-align: center;
   background-color: #343957;
-  transition: transform .2s ease; }
+  transition: transform 0.2s ease; }
 
 .nav-weight {
   font-weight: 500; }
@@ -179,41 +179,9 @@ header .main-nav .fas:hover {
   transform: scale(1.2);
   box-shadow: 0px 5px 40px -10px #f7882f; }
 
-.about img {
-  width: auto;
-  max-width: 300px;
-  max-height: 300px;
-  border: white solid 3px;
-  border-radius: 50%;
-  margin: 2%; }
-
-.about {
-  display: flex;
-  justify-content: center; }
-
-.text {
-  max-width: 600px;
-  margin: 2%; }
-
-.circle1 {
-  /* Create the circle */
-  width: 150px;
-  height: 150px;
-  border: 3px solid white;
-  border-radius: 50%;
-  background-color: #f7f5e6; }
-
-.circle2 {
-  /* Create the circle */
-  width: 200px;
-  height: 200px;
-  border: 3px solid white;
-  border-radius: 50%;
-  background-color: #52658f; }
-
 /* ---- Navigation ---- */
 .name {
-  font-family: 'Yellowtail', cursive;
+  font-family: "Yellowtail", cursive;
   color: #f7f5e6;
   text-align: center;
   font-weight: 300; }
@@ -273,6 +241,126 @@ a:hover:after {
     }
         
     } */
+.border {
+  border-top: 3px solid #52658f;
+  position: relative;
+  width: 30%;
+  align-self: center;
+  margin-bottom: 60px; }
+
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 0px;
+  padding-bottom: 100px;
+  margin: 0 8.75rem; }
+
+.about h3 {
+  text-align: center;
+  color: #52658f;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-top: #52658f;
+  flex-basis: 100%;
+  margin-bottom: 32px; }
+
+.contents {
+  display: flex;
+  justify-content: center; }
+
+.circles {
+  position: relative;
+  height: 415px;
+  width: 430px; }
+
+/* image div - Luke*/
+.img-circle {
+  width: 325px;
+  height: 325px;
+  border: white solid 5px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: absolute;
+  top: 30px;
+  z-index: 3; }
+
+.img-circle img {
+  height: 110%;
+  transform: translate(-70px, -30px); }
+
+/* image div - Luke */
+.circle1 {
+  /* Create the circle */
+  width: 200px;
+  height: 200px;
+  border: 5px solid white;
+  border-radius: 50%;
+  background-color: #f7f5e6;
+  position: absolute;
+  left: 150px;
+  top: 15px;
+  z-index: 1; }
+
+.circle2 {
+  /* Create the circle */
+  width: 275px;
+  height: 275px;
+  border: 5px solid white;
+  border-radius: 50%;
+  background-color: #52658f;
+  position: absolute;
+  left: 125px;
+  top: 130px;
+  z-index: 2; }
+
+.about p {
+  letter-spacing: 1.3px;
+  font-weight: 300;
+  color: #52658f;
+  margin-top: 78px; }
+
+.text {
+  max-width: 600px;
+  margin: 2%;
+  font-size: 1.25em; }
+
+.order {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding-bottom: 100px;
+  padding-top: 0; }
+
+.order h3 {
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #52658f;
+  text-align: center;
+  position: relative;
+  margin-bottom: 0; }
+
+.button {
+  text-decoration: none;
+  text-align: center;
+  padding: 1.1359375rem 0;
+  width: 19.6875rem;
+  color: #fff;
+  background-color: #f7882f;
+  border-radius: 3.125rem;
+  font-size: 1.3rem;
+  font-weight: 700;
+  letter-spacing: 0.1875rem;
+  margin-left: 0.5rem;
+  text-transform: uppercase;
+  margin: 0 auto;
+  margin-top: 35px; }
+  .button:hover {
+    background-color: #e99b5c;
+    box-shadow: 0px 5px 40px -10px #f7882f; }
+
 #order-header {
   width: 100%;
   height: 25rem;
@@ -339,7 +427,7 @@ a:hover:after {
   color: #52658f;
   width: 100%;
   justify-content: space-around;
-  padding: 6.25rem 8.2479375rem; }
+  padding: 6.25rem 8.2479375rem 4.0625rem; }
   #QuickIcons .icon {
     text-align: center;
     width: 23.75rem; }
@@ -519,6 +607,8 @@ a:hover:after {
 #Product-Section {
   margin: 50px 8.75rem;
   text-align: center; }
+  #Product-Section .title {
+    padding-top: 20px; }
   #Product-Section .divider {
     display: block;
     content: "";

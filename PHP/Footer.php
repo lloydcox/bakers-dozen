@@ -1,3 +1,7 @@
+<div class="order">
+      <h3>Proudly Baking For your party, your event, and<br> your breakfast.</h3>
+      <a class ="button" href="Order.php">Order Now</a>
+    </div>
 <footer class="footer">
 <div class="cols">
           <div class="col-1">
@@ -18,10 +22,10 @@
               <ul class="footer-nav">
                 <!-- Removed the > and added them using a pseudo element in the styling - Luke -->
                 <!-- Added the underline class for more control over the hover effect -->
-                <li><a class="underline" href="#"> About</a></li>
-                <li><a class="underline" href="#"> Products</a></li>
-                <li><a class="underline" href="#"> Testimonials</a></li>
-                <li><a class="underline" href="#"> Order</a></li>
+                <li><a class="underline" href="About.php"> About</a></li>
+                <li><a class="underline" href="Products.php"> Products</a></li>
+                <li><a class="underline" href="Testimonials.php"> Testimonials</a></li>
+                <li><a class="underline" href="Order.php"> Order</a></li>
                 <li><a class="underline" href="#"> Privacy Policy</a></li>
             </ul>
           </div>
