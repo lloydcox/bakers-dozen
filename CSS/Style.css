@@ -516,6 +516,53 @@ a:hover:after {
         font-size: 100px;
         font-family: "Yellowtail", cursive; }
 
+#Product-Section {
+  margin: 50px 8.75rem;
+  text-align: center; }
+  #Product-Section .divider {
+    display: block;
+    content: "";
+    height: 3px;
+    width: 30%;
+    background-color: #52658f;
+    margin: 0 auto; }
+  #Product-Section .products {
+    display: flex;
+    justify-content: space-between;
+    margin: 48.5px 0; }
+    #Product-Section .products .Product {
+      height: 700px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      align-content: stretch;
+      width: 22%; }
+      #Product-Section .products .Product h3 {
+        margin: 0;
+        height: 10%;
+        color: #52658f; }
+      #Product-Section .products .Product h4 {
+        height: 10%;
+        margin-bottom: 0;
+        color: #52658f; }
+      #Product-Section .products .Product .description {
+        height: 30%;
+        color: #343957; }
+      #Product-Section .products .Product .flavor {
+        height: 10%;
+        color: #343957; }
+      #Product-Section .products .Product .Product-img {
+        height: 250px;
+        min-height: 250px;
+        width: 250px;
+        border-radius: 100%;
+        overflow: hidden;
+        margin: 15px 0 30px;
+        border: 0.3125rem solid #52658f; }
+        #Product-Section .products .Product .Product-img img {
+          height: 100%; }
+
 * {
   font-family: "Roboto", sans-serif;
   box-sizing: border-box; }
