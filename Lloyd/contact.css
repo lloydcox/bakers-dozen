@@ -139,7 +139,7 @@ input {
     flex-direction: row;
     justify-content: center;
     border: #52658f 1px solid;
-    padding: 32px;
+    padding: 22px;
     width: 100%;
     height: 100%;
     text-align: center;
@@ -164,7 +164,7 @@ input {
     flex-direction: row;
     border: #52658f 1px solid;
     justify-content: center;
-    padding: 32px;
+    padding: 22px;
     width: 100%;
     height: 100%;
     text-align: center;    
@@ -188,7 +188,7 @@ input {
    border: #52658f 1px solid;
    width: 100%;
    height: 100%;
-   padding: 32px;
+   padding: 12px;
 }
 
 .col-e {
