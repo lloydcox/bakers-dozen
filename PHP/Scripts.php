@@ -3,3 +3,4 @@
 <script src="https://kit.fontawesome.com/4f920b82bf.js" crossorigin="anonymous"></script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js" crossorigin="anonymous"></script>
 <script type="text/javascript" src="JS/Scripts.js"></script>
+<script type="text/javascript" src="JS/OrderPage.js"></script>

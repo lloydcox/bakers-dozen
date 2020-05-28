@@ -18,9 +18,9 @@
         echo '</div>
     <div class="quantity">
     <div id="value">
-    <p></p>
+    <p class="number"></p>
     </div>
-    <input type="range" id="ammount" name="ammount" min="1" max="30">
+    <input type="range" class="ammount" name="ammount" min="1" max="30" value="0">
     </div>
 </div>';
     }
