@@ -1,118 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Bakers Dozen</title>
-    <meta name="Bakers Dozen" content="Bakers Dozen simple website">
-    <link href="contact.css" rel="stylesheet" type="text/css">
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> -->
-    <!-- <script src="script.js"></script> -->
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+
+<head>
+  <meta charset="utf-8">
+  <title>Bakers Dozen</title>
+  <meta name="Bakers Dozen" content="Bakers Dozen simple website">
+  <link href="contact.css" rel="stylesheet" type="text/css">
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> -->
+  <!-- <script src="script.js"></script> -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
     integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
-    crossorigin=""/>
-  </head>
-  <body class="site">
+    crossorigin="" />
+</head>
 
-    <header class="main-header">
-        <!-- Added a div container to isolate the elements in the top bar -Luke -->
-        <div class="header-container">
-          <h1 class="name">Baker's Dozen</h1>
-          <ul class="main-nav">
-              <li><a href="#">About</a></li>
-              <li><a href="#">Products</a></li>
-              <li><a href="#">Testimonials</a></li>
-              <li><a href="#">Order</a></li>
-              <li><a href="#"><i class="fas fa-phone"></i></a></li>
-          </ul>
-        </div>   
-      </header>
+<body class="site">
 
-      <h2>Get in touch today!</h2>
+  <header class="main-header">
+    <!-- Added a div container to isolate the elements in the top bar -Luke -->
+    <div class="header-container">
+      <h1 class="name">Baker's Dozen</h1>
+      <ul class="main-nav">
+        <li><a href="#">About</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Testimonials</a></li>
+        <li><a href="#">Order</a></li>
+        <li><a href="#"><i class="fas fa-phone"></i></a></li>
+      </ul>
+    </div>
+  </header>
 
-    <div class="contact">
-        <form action="#">
-            <div class="row">
-                <div class="col">
-                    <label class="label" for="fname">First Name</label>
-                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
-                </div>
-                <div class="col">
-                    <label class="label" for="lname">Last Name</label>
-                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-                </div>
-            </div>
+  <h2>Get in touch today!</h2>
 
-            <div class="row">
-
-                <div class="col">
-                    <label class="label" for="email">Email</label>
-                    <input type="text" id="email" name="email" placeholder="Your Email address..">
-                </div>
-                
-                <div class="col">
-                    <label class="label" for="phone">Phone Number</label>
-                    <input type="text" id="phone" name="phone" placeholder="Your Phone Number..">
-                </div>
-            </div>
-
-            <div class="row"> 
-                <div class="col">
-                    <label class="label" for="subject">Subject</label>
-                    <input type="text" id="subject" name="subject" placeholder="Subject..">
-                </div>
-            </div>    
-
-            <div class="row">
-                <textarea class="label" id="subject" name="subject" placeholder="Please tell us what you'd like to order.." style="height:150px"></textarea>
-            </div>
-
-            <div class="rowgdpr">
-
-              <input type ="checkbox" id="gdpr" value = "Agree"/>
-              <label class="labelgdpr">I have read and agree to the GDPR compliance</label>
-
-            </div>
-
-            <input class="button" type="submit" value="Submit">
-      
-        </form>
+  <div class="contact">
+    <form action="#">
+      <div class="row">
+        <div class="col">
+          <label class="label" for="fname">First Name:</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        </div>
+        <div class="col">
+          <label class="label" for="lname">Last Name:</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        </div>
       </div>
 
-      <div id="mapid"></div>
+      <div class="row">
 
-      <footer class="footer">
-        <div class="cols">
-            <div class="col-1">
-              <h3>Adress</h3>
-              <!-- Ive split this into 2 p tags, this way you have more control on space 
-              between them in css -Luke -->
-              <p>107 Gloucester Street<br>Norwhich, Norfolk<br>NR2 2DY</p>
-              <p>01603 123 987<br>info@bakersdozen.co.uk</p>
-            </div>
-  
-            <div class="col-2">
-              <h3>Opening Times</h3>
-              <p>Monday - Friday 8AM - 4PM <br>Saturday 8AM - 3PM<br>Closed Sunday</p>
-            </div>
-  
-            <div class="col-3">
-              <h3>Sections</h3>
-                <ul class="footer-nav">
-                  <!-- Removed the > and added them using a pseudo element in the styling - Luke -->
-                  <li><a href="#"> About</a></li>
-                  <li><a href="#"> Products</a></li>
-                  <li><a href="#"> Testimonials</a></li>
-                  <li><a href="#"> Order</a></li>
-                  <li><a href="#"> Privacy Policy</a></li>
-              </ul>
-            </div>
+        <div class="col">
+          <label class="label" for="email">Email:</label>
+          <input type="text" id="email" name="email" placeholder="Your Email address..">
         </div>
-  
-          <div class="copy">
-            <p>Copyright &#169; Baker's Dozen. All Rights Reserved 2019</p>
-          </div>
-        
-      </footer>
-    <script src="https://kit.fontawesome.com/4f920b82bf.js" crossorigin="anonymous"></script>
-  </body>
+
+        <div class="col">
+          <label class="label" for="phone">Phone Number:</label>
+          <input type="text" id="phone" name="phone" placeholder="Your Phone Number..">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col subject">
+        <!-- added subject to the col class so specific change can be made to this 
+          col and not the rest -->
+          <label class="label" for="subject">Subject:</label>
+          <input type="text" id="subject" name="subject" placeholder="Subject..">
+        </div>
+      </div>
+
+      <div class="row message">
+        <label class="label" for="message">Message:</label>
+        <textarea id="message" name="message" placeholder="Please tell us what you'd like to order.."
+          style="height:150px"></textarea>
+      </div>
+
+      <div class="rowgdpr">
+
+        <input type="checkbox" id="gdpr" value="Agree" />
+        <label class="labelgdpr">I have read and agree to the GDPR compliance</label>
+
+      </div>
+
+      <input class="button" type="submit" value="Submit">
+
+    </form>
+  </div>
+
+  <div id="mapid"></div>
+
+  <footer class="footer">
+    <div class="cols">
+      <div class="col-1">
+        <h3>Adress</h3>
+        <!-- Ive split this into 2 p tags, this way you have more control on space 
+              between them in css -Luke -->
+        <p>107 Gloucester Street<br>Norwhich, Norfolk<br>NR2 2DY</p>
+        <p>01603 123 987<br>info@bakersdozen.co.uk</p>
+      </div>
+
+      <div class="col-2">
+        <h3>Opening Times</h3>
+        <p>Monday - Friday 8AM - 4PM <br>Saturday 8AM - 3PM<br>Closed Sunday</p>
+      </div>
+
+      <div class="col-3">
+        <h3>Sections</h3>
+        <ul class="footer-nav">
+          <!-- Removed the > and added them using a pseudo element in the styling - Luke -->
+          <li><a href="#"> About</a></li>
+          <li><a href="#"> Products</a></li>
+          <li><a href="#"> Testimonials</a></li>
+          <li><a href="#"> Order</a></li>
+          <li><a href="#"> Privacy Policy</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="copy">
+      <p>Copyright &#169; Baker's Dozen. All Rights Reserved 2019</p>
+    </div>
+
+  </footer>
+  <script src="https://kit.fontawesome.com/4f920b82bf.js" crossorigin="anonymous"></script>
+</body>
+
 </html>

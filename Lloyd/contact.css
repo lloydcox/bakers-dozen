@@ -106,10 +106,45 @@ footer {
 
 /* contact page CSS */
 
+/* I have started by switching off styling that wasnt effecting the elements,
+for example align items center beijng used on a non flex container woint work,
+this value can only be applied to the flex container itself and not the item inside it, 
+the same applies to flex start and so on.
+
+I have removed margins from elements that we can manipualte the spacing with flexbox, 
+for example on the columns within the rows you had margins to space them appart,
+by removing the margin and using justify content space between on the row and setting the
+col widths to just under half the % we have a gap betweeen the items and they are pushed
+either side of the row container that has the full width of the form.
+
+Ive added :focus classes to the fields to take control of the outline od the input fields
+I also adjsuted the border sizes and radious to flow with the main theme of 
+the homepage.
+
+Ive removed the height value from rows as 100% would be the entire height of the form,
+the rows do not need a height as the elements within the row will be what creates the 
+the rows overall height.
+
+I added a class to the html text area section and added a label for abve the message
+input.
+
+I noticed youd accidently left the id as the text area as subject which was the same 
+as the id above still, Ids must be single and only classes can have multiple.
+
+Ive added a min width and height to the text area so that the page cant get to messed up
+this way the user can still pull the area down to type more, but they can be stupid with it 
+all together
+
+the issue wyou were having with the check box is that you had the input set to 50%, 
+which meant it was in the center of a container that took up half the form, so no matter
+what you tried to move it was already taking up the space.
+
+Really great effort though! youve made tonnes of progress with it from yesterday with 
+the feedback youve been given!*/
+
 .contact {
     display: flex;
     justify-content: center; 
-    
     /* use center instead of space evenly as the 
     contact flex container is only holding the form, which will then be in the center.
     /* width: 100%; My bad, giving this one width 100% breaks the screen 
@@ -122,51 +157,63 @@ form {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
-    border: #52658f 1px solid;
+    /* align-items: center; */
+    border: #52658f 3px solid;
     width: 100%;
     padding: 32px;
-
     /* padding: 32px; switch this on to create the space around the form, 
     which gives the fields breathing room  */
+    border-radius: 35px;
 }
 
 
 .label {
-    display: inline-block;
+    /* display: inline-block; */
     color: #52658f;
     font-weight: 500;
-    align-items: center;
-    justify-content: flex-start;
+    /* align-items: center; */
+    /* justify-content: flex-start; */
     width: 100%;
     text-align: start;
+    margin-bottom: 10px;
   }
 
 input {
-    align-content: center;
+    /* align-content: center; */
     width: 100%;
-    margin-right: 5px;
-    padding: 3px;
+    height: 32px;
+    /* margin-right: 5px; */
+    padding: 3px 10px;
+    margin-bottom: 10px;
+    margin-top: 1px;
+    border: #52658f 3px solid;
+    border-radius: 20px;
+}
+
+input:focus {
+    outline: none;
+    border: #f7882f 3px solid;
+    border-radius: 20px;
 }
 
 .row {
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row; */
     justify-content: space-between;
     width: 100%;
-    height: 100%;
-    align-self: center;
-    margin-bottom: 5px;
+    /* height: 100%; */
+    /* align-self: center; */
+    /* margin-bottom: 5px; */
 }
 
 .col {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 50%;
+    width: 49%;
     align-items: flex-start;
-    align-self: center;
-    margin-right: 5px;
+    /* align-self: center; */
+    /* margin-right: 5px; */
 }
 
 /* Heres the route to a lot of your problems, by using the "," between the two 
@@ -183,37 +230,65 @@ have used ids, so youll want to target #subject */
 } 
 */
 
-.row,
-#subject {
-   text-align: start;
-   justify-content: center;
+/* removed the comma between the two to target the correct elements */
+.row #subject {
+   /* text-align: start; */
+   /* justify-content: center; */
    width: 100%;
-   align-items: center;
+   /* align-items: center; */
    
 }
 
-.col, 
-#subject {
+/* removed the comma between the two to target the correct elements */
+.subject {
     text-align: start;
-    justify-content: center;
+    /* justify-content: center; */
     width: 100%;
-    align-items: center;
+    /* align-items: center; */
 }
 
+.message {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
 
 textarea {
-    width: 50%;
+    padding: 10px;
+    width: 100%;
     height: 300px;
-    align-self: center;
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 200px;
+    border-width: 3px;
+    /* align-self: center; */
+    border: #52658f 3px solid;
+    border-radius: 20px;
+    border-bottom-right-radius: 0;
+}
+
+textarea:focus {
+    outline: none;
+    border: #f7882f 3px solid;
+    border-radius: 20px;
+    border-bottom-right-radius: 0;
 }
 
 .rowgdpr {
     display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
 
-#gdpr {
+.rowgdpr input {
+    width: 5%;
+    margin: 0;
+}
+
+/* #gdpr {
     width: 50%;
     justify-content: flex-end;
 
@@ -221,6 +296,13 @@ textarea {
 
 .labelgdpr {
     width: 50%;
+} */
+
+.contact form .button {
+    width: 30%;
+    height: 50px;
+    margin: 0;
+    margin-top: 10px;
 }
 
 
@@ -398,14 +480,14 @@ a:hover:after {
 
 /* MAP CSS */
 
-#mapid{ 
+/* #mapid{ 
     height: 200px;
     width: 400px;
     
 <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js" 
   integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
   crossorigin=""></script>
- }
+ } */
 
 
 /*<!-- Make sure you put this AFTER Leaflet's CSS -->*/
