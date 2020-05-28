@@ -654,24 +654,64 @@ a:hover:after {
         #Product-Section .products .Product .Product-img img {
           height: 100%; }
 
-.shop-item img {
-  height: 100px; }
-
-.shop-item span {
-  border-radius: 100%;
+.shop-content {
+  margin: 0 8.75rem;
+  padding: 50px 0;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 32px;
-  width: 32px;
-  background-color: #52658f;
-  color: #f7f5e6; }
+  flex-wrap: wrap; }
+  .shop-content .width {
+    margin: 25px 0;
+    width: 100%; }
+    .shop-content .width .divider {
+      display: block;
+      content: "";
+      height: 3px;
+      width: 30%;
+      background-color: #52658f;
+      margin: 0 auto; }
 
-.shop-item .value {
-  border: #343957 3px solid;
-  height: 32px;
-  width: 40px;
-  border-radius: 50px; }
+.bread-shop,
+.cake-shop,
+.pie-shop,
+.pizza-shop,
+.pretzel-shop,
+.pastries-shop {
+  width: 50%; }
+
+.shop-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 25px; }
+  .shop-item img {
+    height: 132px;
+    margin-right: 32px;
+    border-radius: 100%;
+    border: 3px #52658f solid; }
+  .shop-item .info {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 32px; }
+    .shop-item .info h3, .shop-item .info p {
+      margin: 0; }
+  .shop-item .quantity {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .shop-item .quantity .value {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: #343957 3px solid;
+      height: 32px;
+      width: 40px;
+      border-radius: 50px; }
+      .shop-item .quantity .value p {
+        margin: 0; }
+    .shop-item .quantity input {
+      width: 150px; }
 
 * {
   font-family: "Roboto", sans-serif;

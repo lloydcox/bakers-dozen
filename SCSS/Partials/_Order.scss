@@ -1,21 +1,68 @@
+.shop-content{
+    margin: 0 8.75rem;
+    padding: 50px 0;
+    display: flex;
+    flex-wrap: wrap;
+    .width {
+        margin: 25px 0;
+        width: 100%;
+        .divider {
+            display: block;
+        content: "";
+        height: 3px;
+        width: 30%;
+        background-color: #52658f;
+        margin: 0 auto;
+        }
+    } 
+}
+.bread-shop,
+.cake-shop,
+.pie-shop,
+.pizza-shop,
+.pretzel-shop,
+.pastries-shop {
+    width: 50%;
+}
 .shop-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 25px;
     img {
-        height: 100px;
-    }
-    span {
+        height: 132px;
+        margin-right: 32px;
         border-radius: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 32px;
-        width: 32px;
-        background-color: $Main;
-        color: $Cream;
+        border: 3px $Main solid;
     }
-    .value {
-        border: $Contrast 3px solid;
-        height: 32px;
-        width: 40px;
-        border-radius: 50px;
+    .info {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-right: 32px;
+        h3, p {
+            margin: 0;
+        }
+    }
+    .quantity {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .value {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: $Contrast 3px solid;
+            height: 32px;
+            width: 40px;
+            border-radius: 50px;
+            p {
+                margin: 0;
+            }
+        }
+        input {
+            width: 150px;
+        }
     }
 }
