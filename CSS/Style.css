@@ -608,7 +608,8 @@ a:hover:after {
   margin: 50px 8.75rem;
   text-align: center; }
   #Product-Section .title {
-    padding-top: 20px; }
+    padding-top: 20px;
+    color: #52658f; }
   #Product-Section .divider {
     display: block;
     content: "";
@@ -652,6 +653,19 @@ a:hover:after {
         border: 0.3125rem solid #52658f; }
         #Product-Section .products .Product .Product-img img {
           height: 100%; }
+
+.shop-item img {
+  height: 100px; }
+
+.shop-item span {
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 32px;
+  width: 32px;
+  background-color: #52658f;
+  color: #f7f5e6; }
 
 * {
   font-family: "Roboto", sans-serif;
