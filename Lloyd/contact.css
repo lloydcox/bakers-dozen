@@ -103,12 +103,16 @@ footer {
     padding: 10px 0;
     margin-top: auto;
 }
+
 /* contact page CSS */
 
 .contact {
     display: flex;
-    justify-content: space-evenly;
-    width: 100%;
+    justify-content: space-evenly; /* use center instead of space evenly as the 
+    contact flex container is only holding the form, which will then be in the center.
+    /* width: 100%; My bad, giving this one width 100% breaks the screen 
+    as i set box-sizing to border box by default, if that wasnt set then this 
+    would have been correct */
     margin: 50px 8.75rem;
 }
 
@@ -119,6 +123,8 @@ form {
     align-items: center;
     border: #52658f 1px solid;
     width: 100%;
+    /* padding: 32px; switch this on to create the space around the form, 
+    which gives the fields breathing room  */
 }
 
 
@@ -153,6 +159,19 @@ input {
     align-self: center;
 }
 
+/* Heres the route to a lot of your problems, by using the "," between the two 
+selectors you are targeting them individualy, which means youre overriding your 
+styles set above for row and col ones below, by removing the "," you will be saying 
+you want to target the subject within the row */
+/* Also you are selecting the class of subject by typing .subject, in your html you 
+have used ids, so youll want to target #subject */
+/* So should look like this
+
+.row #subject {
+
+} 
+
+*/
 .row,
 .subject {
    text-align: center;
