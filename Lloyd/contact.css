@@ -108,7 +108,9 @@ footer {
 
 .contact {
     display: flex;
-    justify-content: space-evenly; /* use center instead of space evenly as the 
+    justify-content: center; 
+    
+    /* use center instead of space evenly as the 
     contact flex container is only holding the form, which will then be in the center.
     /* width: 100%; My bad, giving this one width 100% breaks the screen 
     as i set box-sizing to border box by default, if that wasnt set then this 
@@ -123,21 +125,28 @@ form {
     align-items: center;
     border: #52658f 1px solid;
     width: 100%;
+    padding: 32px;
+
     /* padding: 32px; switch this on to create the space around the form, 
     which gives the fields breathing room  */
 }
 
 
-label {
+.label {
     display: inline-block;
     color: #52658f;
     font-weight: 500;
-    margin: 1px;
     align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    text-align: start;
   }
 
 input {
     align-content: center;
+    width: 100%;
+    margin-right: 5px;
+    padding: 3px;
 }
 
 .row {
@@ -146,23 +155,25 @@ input {
     justify-content: space-between;
     width: 100%;
     height: 100%;
-    text-align: center;
     align-self: center;
+    margin-bottom: 5px;
 }
 
 .col {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 45%;
+    width: 50%;
     align-items: flex-start;
     align-self: center;
+    margin-right: 5px;
 }
 
 /* Heres the route to a lot of your problems, by using the "," between the two 
 selectors you are targeting them individualy, which means youre overriding your 
 styles set above for row and col ones below, by removing the "," you will be saying 
 you want to target the subject within the row */
+
 /* Also you are selecting the class of subject by typing .subject, in your html you 
 have used ids, so youll want to target #subject */
 /* So should look like this
@@ -170,34 +181,49 @@ have used ids, so youll want to target #subject */
 .row #subject {
 
 } 
-
 */
+
 .row,
-.subject {
-   text-align: center;
+#subject {
+   text-align: start;
    justify-content: center;
    width: 100%;
    align-items: center;
+   
 }
 
-.col,
-.subject {
-    flex-direction: column;
-    width: 100%;
+.col, 
+#subject {
+    text-align: start;
     justify-content: center;
+    width: 100%;
+    align-items: center;
 }
+
 
 textarea {
     width: 50%;
     height: 300px;
+    align-self: center;
 }
 
-.row,
-.gdpr {
-   text-align: center;
-   height: 100%;
-   align-self: center;
+.rowgdpr {
+    display: flex;
+    width: 100%;
+    margin-bottom: 5px;
 }
+
+#gdpr {
+    width: 50%;
+    justify-content: flex-end;
+
+}
+
+.labelgdpr {
+    width: 50%;
+}
+
+
 
 
 /* ----------------------- */
