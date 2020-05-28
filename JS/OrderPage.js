@@ -1,22 +1,16 @@
-const $slider = document.querySelectorAll('.ammount');
-const $number = document.querySelectorAll('.number');
+const $slider = document.querySelectorAll('[class$="-ammount"]');
+const $number = document.querySelectorAll('[class$="-number"]');
 const $pairs = [];
 
-// $number.innerText = $slider.value;
-
-// $slider.addEventListener('change', () => {$number.innerText = $slider.value;})
-
 class sliderPair {
-
     constructor(number, slider) {
         this.number = number;
         this.slider = slider;
+        this.number.innerText = this.slider.value;
+        this.slider.addEventListener('change', () => {this.number.innerText = this.slider.value;})
     }
-    
 }
 
-$slider.forEach($pair => {
-    $pairs = (new sliderPair($pair[$slider],$pair[$number]));
-    console.log($pairs);
+$slider.forEach(() => {
+    $pairs.push(new sliderPair($number[($pairs.length)], $slider[($pairs.length)]))
 });
-

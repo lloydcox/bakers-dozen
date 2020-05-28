@@ -17,10 +17,10 @@
         }
         echo '</div>
     <div class="quantity">
-    <div id="value">
-    <p class="number"></p>
+    <div class="value">
+    <p class="'.$Product['id-name'].'-number"></p>
     </div>
-    <input type="range" class="ammount" name="ammount" min="1" max="30" value="0">
+    <input type="range" class="'.$Product['id-name'].'-ammount" name="ammount" min="0" max="30" value="0">
     </div>
 </div>';
     }

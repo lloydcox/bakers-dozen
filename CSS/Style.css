@@ -667,6 +667,12 @@ a:hover:after {
   background-color: #52658f;
   color: #f7f5e6; }
 
+.shop-item .value {
+  border: #343957 3px solid;
+  height: 32px;
+  width: 40px;
+  border-radius: 50px; }
+
 * {
   font-family: "Roboto", sans-serif;
   box-sizing: border-box; }
