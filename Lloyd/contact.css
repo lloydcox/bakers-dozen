@@ -481,7 +481,8 @@ a:hover:after {
 /* MAP CSS */
 
  #mapid { 
-     height: 180px;
+     height: 500px;
+     width: 500px;
 }
     
  
