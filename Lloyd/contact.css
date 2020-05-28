@@ -108,20 +108,21 @@ footer {
 .contact {
     display: flex;
     justify-content: space-evenly;
+    width: 100%;
+    margin: 50px 8.75rem;
 }
 
 form {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    padding: 82px;
+    justify-content: space-between;
     align-items: center;
-    
+    border: #52658f 1px solid;
+    width: 100%;
 }
 
 
 label {
-    padding: 12px 12px 12px 0;
     display: inline-block;
     color: #52658f;
     font-weight: 500;
@@ -129,88 +130,55 @@ label {
     align-items: center;
   }
 
-
 input {
     align-content: center;
 }
 
-.row1 {
+.row {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    border: #52658f 1px solid;
-    padding: 22px;
+    justify-content: space-between;
     width: 100%;
     height: 100%;
     text-align: center;
+    align-self: center;
 }
 
-.col-a {
+.col {
     display: flex;
     flex-direction: column;
-    padding-right: 10px;
-    padding-bottom:  10px;
+    justify-content: space-between;
+    width: 45%;
+    align-items: flex-start;
+    align-self: center;
 }
 
-.col-b {
-    display: flex;
-    flex-direction: column;
-    padding-bottom:  10px;
-    
-}
-
-.row2 {
-    display: flex;
-    flex-direction: row;
-    border: #52658f 1px solid;
-    justify-content: center;
-    padding: 22px;
-    width: 100%;
-    height: 100%;
-    text-align: center;    
-}
-
-.col-c {
-    display: flex;
-    flex-direction: column;
-    padding-right: 10px;
-    padding-bottom:  10px;
-}
-
-.col-d {
-    display: flex;
-    flex-direction: column;
-    padding-bottom:  10px;
-}
-
-.row3 {
+.row,
+.subject {
    text-align: center;
-   border: #52658f 1px solid;
+   justify-content: center;
    width: 100%;
-   height: 100%;
-   padding: 12px;
+   align-items: center;
 }
 
-.col-e {
-    display: flex;
+.col,
+.subject {
     flex-direction: column;
-    padding-bottom:  10px;
-}
-
-.row4 {
     width: 100%;
-    border: #52658f 1px solid;
-    resize: none;
-    height: 100%;
-    width: 100%;
-    padding: 32px;
+    justify-content: center;
 }
 
 textarea {
-    width: 100%;
+    width: 50%;
     height: 300px;
 }
 
+.row,
+.gdpr {
+   text-align: center;
+   height: 100%;
+   align-self: center;
+}
 
 
 /* ----------------------- */
@@ -333,6 +301,7 @@ h3 {
     padding: 5px 75px 5px 75px;
     position: relative;
     text-align: center;
+    border-style: none;
 }
 
 
@@ -381,6 +350,8 @@ a:hover:after {
     color: #f7882f;    
     width: 100%;
 }
+
+/* MAP CSS */
 
 #mapid{ 
     height: 200px;
