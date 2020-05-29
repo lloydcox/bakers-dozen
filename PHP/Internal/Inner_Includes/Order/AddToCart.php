@@ -10,7 +10,7 @@
                 echo '<div class="shop-item">
             <img src="' . $Product['Image_url'] . '" alt="' . $Product['Name'] . '">
             <div class="info">
-                <h3>' . $Product['Name'] . '</h3>';
+                <h3 class="item">' . $Product['Name'] . '</h3>';
                 if (!is_null($Product['Flavor1'])) {
                     echo '<p class="flavor">Notable Flavour/s: ' . $Product['Flavor1'];
                     if (!is_null($Product['Flavor2'])) {
@@ -40,7 +40,7 @@
                 echo '<div class="shop-item">
             <img src="' . $Product['Image_url'] . '" alt="' . $Product['Name'] . '">
             <div class="info">
-                <h3>' . $Product['Name'] . '</h3>';
+                <h3 class="item">' . $Product['Name'] . '</h3>';
                 if (!is_null($Product['Flavor1'])) {
                     echo '<p class="flavor">Notable Flavour/s: ' . $Product['Flavor1'];
                     if (!is_null($Product['Flavor2'])) {
@@ -73,7 +73,7 @@
                 echo '<div class="shop-item">
             <img src="' . $Product['Image_url'] . '" alt="' . $Product['Name'] . '">
             <div class="info">
-                <h3>' . $Product['Name'] . '</h3>';
+                <h3 class="item">' . $Product['Name'] . '</h3>';
                 if (!is_null($Product['Flavor1'])) {
                     echo '<p class="flavor">Notable Flavour/s: ' . $Product['Flavor1'];
                     if (!is_null($Product['Flavor2'])) {
@@ -103,7 +103,7 @@
                 echo '<div class="shop-item">
             <img src="' . $Product['Image_url'] . '" alt="' . $Product['Name'] . '">
             <div class="info">
-                <h3>' . $Product['Name'] . '</h3>';
+                <h3 class="item">' . $Product['Name'] . '</h3>';
                 if (!is_null($Product['Flavor1'])) {
                     echo '<p class="flavor">Notable Flavour/s: ' . $Product['Flavor1'];
                     if (!is_null($Product['Flavor2'])) {
@@ -136,7 +136,7 @@
                 echo '<div class="shop-item">
             <img src="' . $Product['Image_url'] . '" alt="' . $Product['Name'] . '">
             <div class="info">
-                <h3>' . $Product['Name'] . '</h3>';
+                <h3 class="item">' . $Product['Name'] . '</h3>';
                 if (!is_null($Product['Flavor1'])) {
                     echo '<p class="flavor">Notable Flavour/s: ' . $Product['Flavor1'];
                     if (!is_null($Product['Flavor2'])) {
@@ -166,7 +166,7 @@
                 echo '<div class="shop-item">
             <img src="' . $Product['Image_url'] . '" alt="' . $Product['Name'] . '">
             <div class="info">
-                <h3>' . $Product['Name'] . '</h3>';
+                <h3 class="item">' . $Product['Name'] . '</h3>';
                 if (!is_null($Product['Flavor1'])) {
                     echo '<p class="flavor">Notable Flavour/s: ' . $Product['Flavor1'];
                     if (!is_null($Product['Flavor2'])) {
@@ -188,6 +188,13 @@
             }
         }
         ?>
+        </div>
+        <div id="cart">
+            <h3></h3>
+            <div id="list">
+
+            </div>
+            <h3 id="total"></h3>
         </div>
     </div>
 </div>
