@@ -1,75 +1,88 @@
 const $cost = document.querySelectorAll('[class$="-cost"]');
 const $slider = document.querySelectorAll('[class$="-ammount"]');
 const $number = document.querySelectorAll('[class$="-number"]');
-const $product = document.querySelectorAll('.item');
-const $pairs = [];
-const $basket = [];
-const $inBasket = [];
+const $product = document.querySelectorAll(".item");
+const $Products = [];
+const $inCart = [];
 
-const $cart = document.querySelector('#list');
-const $total = document.querySelector('#total')
+const $cart = document.querySelector("#list");
+const $total = document.querySelector("#total");
 
 function notInArray(needle, haystack) {
-    let $count = haystack.length;
-    for(let i = 0; i<$count; i++){
-        if(haystack[i]===needle){
-            return false;
-        }
+  let $count = haystack.length;
+  for (let i = 0; i < $count; i++) {
+    if (haystack[i] === needle) {
+      return false;
     }
-    return true;
-}
-
-function arrayCount(array) {
-    let $count = array.length;
-    for(let i = 0; i<$count; i++){
-        return i;
-    }
-}
-
-class cartItem {
-    constructor($name, $quantity, $ammount){
-        this.name = $name;
-        this.quantity = $quantity;
-        this.totalAmmount = $ammount;
-        this.outPut = '' ;
-    }
+  }
+  return true;
 }
 
 class product {
-    constructor(number, slider, product, value) {
+  constructor(number, slider, product, value) {
+    this.quantity = number;
+    this.currentOutput = "";
+    this.slider = slider;
+    this.price = value;
+    this.name = product;
+    this.total = "£" + this.price * this.quantity.innerText;
+    this.quantity.innerText = this.slider.value;
+    this.outPut =
+      "<div><h3>" +
+      this.name +
+      '</h3><p class="' +
+      this.name.replace(/\s/g, "") +
+      '-Quantity">Quantity: ' +
+      this.slider.value +
+      "</p><p>" +
+      this.total +
+      "</p></div>";
 
-        this.number = number;
-        this.slider = slider;
-        this.value = value;
-        this.product = product;
-        this.cart = $basket.push(new cartItem(this.product.innerHTML, this.slider.value, this.number.innerText * this.value.innerText));
-        this.index = $pairs.length;
-        this.number.innerText = this.slider.value;
+    this.slider.addEventListener("change", () => {
+      this.quantity.innerText = this.slider.value;
+      this.total = "£" + (this.price * this.quantity.innerText).toFixed(2);
+      this.cartIndex = $inCart.indexOf(this.outPut);
+      this.outPut =
+        "<div><h3>" +
+        this.name +
+        '</h3><p class="' +
+        this.name.replace(/\s/g, "") +
+        '-Quantity">Quantity: ' +
+        this.slider.value +
+        "</p><p>" +
+        this.total +
+        "</p></div>";
 
-        this.slider.addEventListener('change', () => {
-            this.number.innerText = this.slider.value;
-            $basket[this.index].quantity = this.slider.value;
-            $basket[this.index].totalAmmount = this.number.innerText * this.value.innerText;
-            $basket[this.index].outPut = '<div><h3>'+ $basket[this.index].name +'</h3><p class="'+ this.product.innerHTML.replace(/\s/g,'') +'-Quantity">Quantity: '+ $basket[this.index].quantity +'</p><p>'+ $basket[this.index].totalAmmount.toFixed(2) +'</p></div>'
-            
-            let $currentQuantity = '';
-            $basket[this.index].currentQuantity = $currentQuantity;
+      if (
+        this.slider.value > 0 &&
+        notInArray(this.currentOutput, $inCart) &&
+        this.currentOutput !== this.outPut
+      ) {
+        this.currentOutput = this.outPut;
+        $inCart.push(this.outPut);
+      } else {
+        this.currentOutput = this.outPut;
+        $inCart.splice(this.cartIndex, 1, this.outPut);
+      }
 
-            if($basket[this.index].quantity > 0) {
-                $currentQuantity = this.slider.value;
-                $inBasket.push($basket[this.index].outPut);
-            }
-            if($basket[this.index].quantity < 1) {
-                $inBasket.pop($basket[this.index].outPut);
-            } 
-            // if($basket[this.index].currentQuantity === $currentQuantity) {
-            //     if
-            // }
-            $cart.innerHTML = $inBasket.toString();
-        })
-    }
+      if (this.slider.value < 1) {
+        $inCart.splice(this.cartIndex, 1);
+        this.currentOutput = "";
+      }
+
+      $cart.innerHTML = $inCart.toString();
+    });
+  }
 }
 
-$slider.forEach(() => {
-    $pairs.push(new product($number[($pairs.length)], $slider[($pairs.length)], $product[($pairs.length)], $cost[($pairs.length)]))
-});
+let count = $product.length;
+for (i = 0; i < count; i++) {
+  $Products.push(
+    new product(
+      $number[i],
+      $slider[i],
+      $product[i].innerHTML,
+      $cost[i].innerHTML
+    )
+  );
+}
