@@ -554,10 +554,10 @@ a:hover:after {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 0;
-    transition: transform .2s ease; }
+    transition: transform 0.2s ease; }
     #Reviews .review-slick .slick-dots:hover {
       transform: scale(1.2);
-      transition: transform .2s ease; }
+      transition: transform 0.2s ease; }
     #Reviews .review-slick .slick-dots button:hover {
       background-color: #343957; }
     #Reviews .review-slick .slick-dots .slick-active button {
@@ -603,6 +603,46 @@ a:hover:after {
         text-align: center;
         font-size: 100px;
         font-family: "Yellowtail", cursive; }
+
+#review-section {
+  margin: 0 8.75rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px; }
+  #review-section h3 {
+    margin-top: 100px;
+    margin-bottom: 50px;
+    color: #52658f; }
+
+.review-item:focus {
+  outline: none; }
+
+.review-item .customer {
+  display: flex;
+  justify-content: flex-end; }
+  .review-item .customer h4 {
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: #52658f;
+    margin-right: 100px; }
+
+.review-item .review {
+  display: flex;
+  justify-content: center;
+  color: #343957; }
+  .review-item .review p {
+    width: 80%;
+    margin-left: 30px;
+    margin-top: 60px; }
+  .review-item .review span {
+    width: 80px; }
+    .review-item .review span p {
+      margin: 0 auto;
+      text-align: center;
+      font-size: 100px;
+      font-family: "Yellowtail", cursive; }
 
 #Product-Section {
   margin: 50px 8.75rem;
@@ -708,7 +748,8 @@ a:hover:after {
       border: #343957 3px solid;
       height: 32px;
       width: 40px;
-      border-radius: 50px; }
+      border-radius: 50px;
+      margin-bottom: 20px; }
       .shop-item .quantity .value p {
         margin: 0; }
     .shop-item .quantity input {
@@ -744,6 +785,318 @@ a:hover:after {
         margin-bottom: 5px; }
   #cart #total {
     margin: 0; }
+
+.contact {
+  display: flex;
+  justify-content: center;
+  /* use center instead of space evenly as the 
+    contact flex container is only holding the form, which will then be in the center.
+    /* width: 100%; My bad, giving this one width 100% breaks the screen 
+    as i set box-sizing to border box by default, if that wasnt set then this 
+    would have been correct */
+  flex-direction: column;
+  align-items: center;
+  margin: 50px 8.75rem; }
+  .contact h3 {
+    color: #52658f; }
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* align-items: center; */
+  border: #52658f 3px solid;
+  width: 100%;
+  padding: 32px;
+  /* padding: 32px; switch this on to create the space around the form, 
+    which gives the fields breathing room  */
+  border-radius: 35px; }
+
+.label {
+  /* display: inline-block; */
+  color: #52658f;
+  font-weight: 500;
+  /* align-items: center; */
+  /* justify-content: flex-start; */
+  width: 100%;
+  text-align: start;
+  margin-bottom: 10px; }
+
+.contact input {
+  /* align-content: center; */
+  width: 100%;
+  height: 32px;
+  /* margin-right: 5px; */
+  padding: 3px 10px;
+  margin-bottom: 10px;
+  margin-top: 1px;
+  border: #52658f 3px solid;
+  border-radius: 20px; }
+
+.contact input:focus {
+  outline: none;
+  border: #f7882f 3px solid;
+  border-radius: 20px; }
+
+.row {
+  display: flex;
+  /* flex-direction: row; */
+  justify-content: space-between;
+  width: 100%;
+  /* height: 100%; */
+  /* align-self: center; */
+  /* margin-bottom: 5px; */ }
+
+.col {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 49%;
+  align-items: flex-start;
+  /* align-self: center; */
+  /* margin-right: 5px; */ }
+
+/* Heres the route to a lot of your problems, by using the "," between the two 
+selectors you are targeting them individualy, which means youre overriding your 
+styles set above for row and col ones below, by removing the "," you will be saying 
+you want to target the subject within the row */
+/* Also you are selecting the class of subject by typing .subject, in your html you 
+have used ids, so youll want to target #subject */
+/* So should look like this
+
+.row #subject {
+
+} 
+*/
+/* removed the comma between the two to target the correct elements */
+.row #subject {
+  /* text-align: start; */
+  /* justify-content: center; */
+  width: 100%;
+  /* align-items: center; */ }
+
+/* removed the comma between the two to target the correct elements */
+.subject {
+  text-align: start;
+  /* justify-content: center; */
+  width: 100%;
+  /* align-items: center; */ }
+
+.message {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px; }
+
+textarea {
+  padding: 10px;
+  width: 100%;
+  height: 300px;
+  max-width: 100%;
+  min-width: 100%;
+  min-height: 200px;
+  border-width: 3px;
+  /* align-self: center; */
+  border: #52658f 3px solid;
+  border-radius: 20px;
+  border-bottom-right-radius: 0; }
+
+textarea:focus {
+  outline: none;
+  border: #f7882f 3px solid;
+  border-radius: 20px;
+  border-bottom-right-radius: 0; }
+
+.rowgdpr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 10px;
+  margin-top: 10px; }
+
+.rowgdpr input {
+  width: 5%;
+  margin: 0; }
+
+.contact form .button {
+  text-decoration: none;
+  text-align: center;
+  padding: 1.1359375rem 0;
+  width: 19.6875rem;
+  color: #fff;
+  background-color: #f7882f;
+  border-radius: 3.125rem;
+  font-size: 1.3rem;
+  font-weight: 700;
+  letter-spacing: 0.1875rem;
+  margin-left: 0.5rem;
+  text-transform: uppercase;
+  margin: 0 auto;
+  height: auto;
+  margin-top: 10px;
+  border-style: none; }
+
+/* MAP CSS */
+#mapid {
+  height: 400px;
+  width: 400px;
+  margin: auto;
+  margin-bottom: 100px;
+  border: #52658f solid 3px;
+  border-radius: 10%; }
+
+.about-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 100px;
+  padding-bottom: 100px; }
+
+.about-section h3 {
+  text-align: center;
+  color: #52658f;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-top: #52658f;
+  flex-basis: 100%; }
+
+.about-section .contents {
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+  flex-direction: row; }
+
+.about-section .contents1 {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px;
+  flex-direction: row-reverse; }
+
+.about-section .circles {
+  position: relative;
+  width: 30%;
+  margin-right: 7%; }
+
+.circles1 {
+  position: relative;
+  width: 30%; }
+
+.text {
+  max-width: 600px;
+  margin: 2%;
+  font-size: 1.25em; }
+
+.text1 {
+  max-width: 600px;
+  margin: 2%;
+  font-size: 1.25em; }
+
+/* image div - Luke*/
+.img-circle {
+  width: 325px;
+  height: 325px;
+  border: white solid 5px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: absolute;
+  z-index: 3; }
+
+.cake-circle {
+  height: 110%;
+  transform: translate(-70px, -30px); }
+
+/* image div - Luke */
+.circle1 {
+  /* Create the circle */
+  width: 200px;
+  height: 200px;
+  border: 5px solid white;
+  border-radius: 50%;
+  background-color: #f7f5e6;
+  position: absolute;
+  left: 150px;
+  top: -15px;
+  z-index: 1; }
+
+.circle2 {
+  /* Create the circle */
+  width: 275px;
+  height: 275px;
+  border: 5px solid white;
+  border-radius: 50%;
+  background-color: #52658f;
+  position: absolute;
+  left: 125px;
+  top: 100px;
+  z-index: 2; }
+
+.img-circle1 {
+  width: 325px;
+  height: 325px;
+  border: white solid 5px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: absolute;
+  z-index: 3; }
+
+.cake-circle {
+  height: 110%;
+  transform: translate(-70px, -30px); }
+
+/* image div - Luke */
+.circle3 {
+  /* Create the circle */
+  width: 200px;
+  height: 200px;
+  border: 5px solid white;
+  border-radius: 50%;
+  background-color: #f7882f;
+  position: absolute;
+  left: 150px;
+  top: -15px;
+  z-index: 1; }
+
+.circle4 {
+  /* Create the circle */
+  width: 275px;
+  height: 275px;
+  border: 5px solid white;
+  border-radius: 50%;
+  background-color: #f7f5e6;
+  position: absolute;
+  left: 125px;
+  top: 100px;
+  z-index: 2; }
+
+.circle5 {
+  /* Create the circle */
+  width: 200px;
+  height: 200px;
+  border: 5px solid white;
+  border-radius: 50%;
+  background-color: #52658f;
+  position: absolute;
+  left: 150px;
+  top: -15px;
+  z-index: 1; }
+
+.circle6 {
+  /* Create the circle */
+  width: 275px;
+  height: 275px;
+  border: 5px solid white;
+  border-radius: 50%;
+  background-color: #f7882f;
+  position: absolute;
+  left: 125px;
+  top: 100px;
+  z-index: 2; }
+
+.about-section p {
+  letter-spacing: 1.3px;
+  font-weight: 300;
+  color: #52658f; }
 
 * {
   font-family: "Roboto", sans-serif;

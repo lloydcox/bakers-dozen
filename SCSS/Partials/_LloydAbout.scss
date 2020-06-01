@@ -1,0 +1,171 @@
+.about-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.about-section h3 {
+  text-align: center;
+  color: #52658f;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-top: #52658f;
+  flex-basis: 100%;
+}
+
+.about-section .contents {
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+  flex-direction: row;
+}
+
+.about-section .contents1 {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px;
+  flex-direction: row-reverse;
+}
+
+.about-section .circles {
+  position: relative;
+  width: 30%;
+  margin-right: 7%;
+}
+
+.circles1 {
+  position: relative;
+  width: 30%;
+}
+
+.text {
+  max-width: 600px;
+  margin: 2%;
+  font-size: 1.25em;
+}
+
+.text1 {
+  max-width: 600px;
+  margin: 2%;
+  font-size: 1.25em;
+}
+
+/* image div - Luke*/
+.img-circle {
+  width: 325px;
+  height: 325px;
+  border: white solid 5px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: absolute;
+  z-index: 3;
+}
+
+.cake-circle {
+  height: 110%;
+  transform: translate(-70px, -30px);
+}
+/* image div - Luke */
+
+.circle1 {
+  /* Create the circle */
+  width: 200px;
+  height: 200px;
+  border: 5px solid white;
+  border-radius: 50%;
+  background-color: #f7f5e6;
+  position: absolute;
+  left: 150px;
+  top: -15px;
+  z-index: 1;
+}
+
+.circle2 {
+  /* Create the circle */
+  width: 275px;
+  height: 275px;
+  border: 5px solid white;
+  border-radius: 50%;
+  background-color: #52658f;
+  position: absolute;
+  left: 125px;
+  top: 100px;
+  z-index: 2;
+}
+
+.img-circle1 {
+  width: 325px;
+  height: 325px;
+  border: white solid 5px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: absolute;
+  z-index: 3;
+}
+
+.cake-circle {
+  height: 110%;
+  transform: translate(-70px, -30px);
+}
+/* image div - Luke */
+
+.circle3 {
+  /* Create the circle */
+  width: 200px;
+  height: 200px;
+  border: 5px solid white;
+  border-radius: 50%;
+  background-color: #f7882f;
+  position: absolute;
+  left: 150px;
+  top: -15px;
+  z-index: 1;
+}
+
+.circle4 {
+  /* Create the circle */
+  width: 275px;
+  height: 275px;
+  border: 5px solid white;
+  border-radius: 50%;
+  background-color: #f7f5e6;
+  position: absolute;
+  left: 125px;
+  top: 100px;
+  z-index: 2;
+}
+
+.circle5 {
+  /* Create the circle */
+  width: 200px;
+  height: 200px;
+  border: 5px solid white;
+  border-radius: 50%;
+  background-color: #52658f;
+  position: absolute;
+  left: 150px;
+  top: -15px;
+  z-index: 1;
+}
+
+.circle6 {
+  /* Create the circle */
+  width: 275px;
+  height: 275px;
+  border: 5px solid white;
+  border-radius: 50%;
+  background-color: #f7882f;
+  position: absolute;
+  left: 125px;
+  top: 100px;
+  z-index: 2;
+}
+
+.about-section p {
+  letter-spacing: 1.3px;
+  font-weight: 300;
+  color: #52658f;
+}
