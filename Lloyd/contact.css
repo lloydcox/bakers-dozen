@@ -1,12 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Yellowtail&display=swap");
 
-/*CSS File*/
+/*Contact CSS File*/
 /* *{border: 1px solid black;} */
 /* -- Font styles --*/
 
 * {
   font-family: 'Roboto', sans-serif;
   box-sizing: border-box; }
+
+.Site {
+    display: flex;
+    flex-direction: column;
+  }
+  
 
 /* Roboto is main text, adjust font weight to fit titles and paragraphs */
 /* font-family: 'Roboto', sans-serif; 
@@ -32,7 +38,6 @@ Cream : #f7f5e6;
 header {
     background-color: #52658f;
     height: 100px;
-    
     display: flex;  
     justify-content: space-evenly;  
 }
@@ -98,6 +103,200 @@ footer {
     padding: 10px 0;
     margin-top: auto;
 }
+
+/* contact page CSS */
+
+/* I have started by switching off styling that wasnt effecting the elements,
+for example align items center beijng used on a non flex container woint work,
+this value can only be applied to the flex container itself and not the item inside it, 
+the same applies to flex start and so on.
+
+I have removed margins from elements that we can manipualte the spacing with flexbox, 
+for example on the columns within the rows you had margins to space them appart,
+by removing the margin and using justify content space between on the row and setting the
+col widths to just under half the % we have a gap betweeen the items and they are pushed
+either side of the row container that has the full width of the form.
+
+Ive added :focus classes to the fields to take control of the outline od the input fields
+I also adjsuted the border sizes and radious to flow with the main theme of 
+the homepage.
+
+Ive removed the height value from rows as 100% would be the entire height of the form,
+the rows do not need a height as the elements within the row will be what creates the 
+the rows overall height.
+
+I added a class to the html text area section and added a label for abve the message
+input.
+
+I noticed youd accidently left the id as the text area as subject which was the same 
+as the id above still, Ids must be single and only classes can have multiple.
+
+Ive added a min width and height to the text area so that the page cant get to messed up
+this way the user can still pull the area down to type more, but they can be stupid with it 
+all together
+
+the issue wyou were having with the check box is that you had the input set to 50%, 
+which meant it was in the center of a container that took up half the form, so no matter
+what you tried to move it was already taking up the space.
+
+Really great effort though! youve made tonnes of progress with it from yesterday with 
+the feedback youve been given!*/
+
+.contact {
+    display: flex;
+    justify-content: center; 
+    /* use center instead of space evenly as the 
+    contact flex container is only holding the form, which will then be in the center.
+    /* width: 100%; My bad, giving this one width 100% breaks the screen 
+    as i set box-sizing to border box by default, if that wasnt set then this 
+    would have been correct */
+    margin: 50px 8.75rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* align-items: center; */
+    border: #52658f 3px solid;
+    width: 100%;
+    padding: 32px;
+    /* padding: 32px; switch this on to create the space around the form, 
+    which gives the fields breathing room  */
+    border-radius: 35px;
+}
+
+
+.label {
+    /* display: inline-block; */
+    color: #52658f;
+    font-weight: 500;
+    /* align-items: center; */
+    /* justify-content: flex-start; */
+    width: 100%;
+    text-align: start;
+    margin-bottom: 10px;
+  }
+
+input {
+    /* align-content: center; */
+    width: 100%;
+    height: 32px;
+    /* margin-right: 5px; */
+    padding: 3px 10px;
+    margin-bottom: 10px;
+    margin-top: 1px;
+    border: #52658f 3px solid;
+    border-radius: 20px;
+}
+
+input:focus {
+    outline: none;
+    border: #f7882f 3px solid;
+    border-radius: 20px;
+}
+
+.row {
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: space-between;
+    width: 100%;
+    /* height: 100%; */
+    /* align-self: center; */
+    /* margin-bottom: 5px; */
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 49%;
+    align-items: flex-start;
+    /* align-self: center; */
+    /* margin-right: 5px; */
+}
+
+/* Heres the route to a lot of your problems, by using the "," between the two 
+selectors you are targeting them individualy, which means youre overriding your 
+styles set above for row and col ones below, by removing the "," you will be saying 
+you want to target the subject within the row */
+
+/* Also you are selecting the class of subject by typing .subject, in your html you 
+have used ids, so youll want to target #subject */
+/* So should look like this
+
+.row #subject {
+
+} 
+*/
+
+/* removed the comma between the two to target the correct elements */
+.row #subject {
+   /* text-align: start; */
+   /* justify-content: center; */
+   width: 100%;
+   /* align-items: center; */
+   
+}
+
+/* removed the comma between the two to target the correct elements */
+.subject {
+    text-align: start;
+    /* justify-content: center; */
+    width: 100%;
+    /* align-items: center; */
+}
+
+.message {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+textarea {
+    padding: 10px;
+    width: 100%;
+    height: 300px;
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 200px;
+    border-width: 3px;
+    /* align-self: center; */
+    border: #52658f 3px solid;
+    border-radius: 20px;
+    border-bottom-right-radius: 0;
+}
+
+textarea:focus {
+    outline: none;
+    border: #f7882f 3px solid;
+    border-radius: 20px;
+    border-bottom-right-radius: 0;
+}
+
+.rowgdpr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.rowgdpr input {
+    width: 5%;
+    margin: 0;
+}
+
+
+.contact form .button {
+    width: 30%;
+    height: 50px;
+    margin: 0;
+    margin-top: 10px;
+}
+
+
 
 
 /* ----------------------- */
@@ -170,15 +369,6 @@ in other columns - Luke */
     justify-content: center;
 }
 
-.border {
-       
-    border: 1.5px solid #52658f;
-    position: relative;
-    width: 30%;
-    align-self: center;
-    margin-bottom: 35px;
-}
-
 
 /* Ive added a font weight to the p elements to make them skinnier by adjusting the font weight
 _ Luke */
@@ -186,6 +376,7 @@ _ Luke */
     font-weight: 200;
     font-size: 18px;
     letter-spacing: 2px;
+    
 }
 
 .fas  {
@@ -197,14 +388,6 @@ _ Luke */
     background-color: #343957;
 }
 
-.about  {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-top: 100px;
-    padding-bottom: 100px;
-         
-}
 
 h2 {
     text-align: center;
@@ -214,80 +397,6 @@ h2 {
     letter-spacing: 2px;  
     border-top: #52658f;
     flex-basis: 100%;
-}
-
-.contents {
-    display: flex;
-    justify-content: space-around;
-}
-
-.circles {
-    position: relative;  
-
-}
-
-/* image div - Luke*/
-.img-circle {
-    width: 325px;
-    height: 325px;
-    border: white solid 5px;
-    border-radius: 50%;
-    overflow: hidden;
-    position: absolute;
-    z-index: 3;
-}
-
-img {
-    height: 110%;
-    transform: translate(-70px, -30px);  
-}
-/* image div - Luke */
-
-.circle1 {
-    /* Create the circle */
-    width: 200px;
-    height: 200px;
-    border: 5px solid white;
-    border-radius: 50%;
-    background-color: #f7f5e6;
-    position: absolute;
-    left: 150px;
-    top: -15px;
-    z-index: 1;
-    
-  }
-
-.circle2 {
-    /* Create the circle */
-    width: 275px;
-    height: 275px;
-    border: 5px solid white;
-    border-radius: 50%;
-    background-color: #52658f;
-    position: absolute;
-    left: 125px;
-    top: 100px;
-    z-index: 2;
-  }
-
-
-.about p {
-    letter-spacing: 1.3px;
-    font-weight: 300;
-    color: #52658f;
-}
-
-.text {
-    max-width: 600px;
-    margin: 2%;
-    font-size: 1.25em;
-}
-
-.order {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    padding: 50px;
 }
 
 h3 {
@@ -310,6 +419,7 @@ h3 {
     padding: 5px 75px 5px 75px;
     position: relative;
     text-align: center;
+    border-style: none;
 }
 
 
@@ -359,15 +469,21 @@ a:hover:after {
     width: 100%;
 }
 
-#mapid{ 
-    height: 200px;
-    width: 400px;
+/* MAP CSS */
+
+ #mapid { 
+     height: 400px;
+     width: 400px;
+     margin: auto;
+     margin-bottom: 25px;
+     border: #52658f solid 3px;
+     border-radius: 10%;
+}
     
+ 
 
- }
 
 
-/*<!-- Make sure you put this AFTER Leaflet's CSS -->*/
 
 
   
@@ -396,4 +512,4 @@ a:hover:after {
       justify-content: space-between;
     }
         
-    } */
+     */

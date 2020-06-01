@@ -97,105 +97,12 @@ footer {
     height: 350px;
     padding: 10px 0;
     margin-top: auto;
+    width: 100vw;
 }
 
 
 /* ----------------------- */
 
-/* .footer-nav,
-li         {
-    flex-direction: column;
-    padding-left: 0;
-} */
-
-.footer-nav         {
-    flex-direction: column;
-    padding-left: 0;
-    /* Used list-style-type to remove the bullet points from the ul */
-    list-style-type: none;
-}
-
-/* I have rectified this, by adding the comma between the two you are targeting 
-both elements seperatly, without the comma you are directing the styling
-to target the li.
-But what you wanted was to remove the padding of the ul and set its flex direction to column
-_ Luke */
-
-/* ------------------------ */
-
-.cols {
-    display: flex;
-    /* Have changed this to space-between so the elements are pushed to the edge 
-    of the container - Luke */
-    justify-content: space-between;
-    /* justify-content: space-around; */
-    /* Ive added the width to this cols element to align it with the width of the navbar
-    and given it margin of 0 auto to place it on the middle of the page - Luke */
-    width: 80%;
-    margin: 0 auto;
-}
-
-/* Added bigger margin under the h3 in the footer - Luke */
-.cols h3 {
-    margin-bottom: 30px;
-}
-
-/* Pseudo element for the > in the html, styled to be bold compared to the a tag itself - Luke */
-.col-3 ul li a::before {
-    content: '>';
-    font-weight: bold;
-}
-
-/* Ive added a bigger line height to make it closer to the concept - Luke */
-.cols p,
-.cols a {
-    line-height: 28px;
-}
-
-/* added the styling to the a tags of col-3 to match the styling of the p
-in other columns - Luke */
-.col-3 a {
-    font-weight: 200;
-    font-size: 18px;
-    letter-spacing: 2px;
-}
-
-/* Added a bigger margin to adjust the sppace between the details  */
-.col-1 p {
-    margin-bottom: 30px;
-}
-
-.copy {
-    align-self: center;
-    justify-content: center;
-}
-
-.border {
-       
-    border: 1.5px solid #52658f;
-    position: relative;
-    width: 30%;
-    align-self: center;
-    margin-bottom: 35px;
-}
-
-
-/* Ive added a font weight to the p elements to make them skinnier by adjusting the font weight
-_ Luke */
-.footer p {
-    font-weight: 200;
-    font-size: 18px;
-    letter-spacing: 2px;
-}
-
-.fas  {
-    color: #f7882f;
-    font-size: xx-large;
-    border: #343957 solid 15px;
-    border-radius: 50%;
-    text-align: center;
-    background-color: #343957;
-}
 
 .about  {
     display: flex;
@@ -203,7 +110,6 @@ _ Luke */
     justify-content: center;
     padding-top: 100px;
     padding-bottom: 100px;
-         
 }
 
 h2 {
@@ -219,12 +125,43 @@ h2 {
 .contents {
     display: flex;
     justify-content: space-around;
+    padding: 40px;
+    flex-direction: row;
+    
+}
+
+.contents1 {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px;
+    flex-direction: row-reverse;
+    
 }
 
 .circles {
     position: relative;  
-
+    width: 50%;
+    margin-right: 7%;
 }
+
+.circles1 {
+    position: relative;
+    width: 50%;
+}
+
+.text {
+    max-width: 600px;
+    margin: 2%;
+    font-size: 1.25em;
+}
+
+.text1 {
+    max-width: 600px;
+    margin: 2%;
+    font-size: 1.25em;
+}
+
+
 
 /* image div - Luke*/
 .img-circle {
@@ -270,17 +207,80 @@ img {
     z-index: 2;
   }
 
+  .img-circle1 {
+    width: 325px;
+    height: 325px;
+    border: white solid 5px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    z-index: 3;
+}
+
+img {
+    height: 110%;
+    transform: translate(-70px, -30px);  
+}
+/* image div - Luke */
+
+.circle3 {
+    /* Create the circle */
+    width: 200px;
+    height: 200px;
+    border: 5px solid white;
+    border-radius: 50%;
+    background-color: #f7882f;
+    position: absolute;
+    left: 150px;
+    top: -15px;
+    z-index: 1;
+    
+  }
+
+.circle4 {
+    /* Create the circle */
+    width: 275px;
+    height: 275px;
+    border: 5px solid white;
+    border-radius: 50%;
+    background-color:#f7f5e6;
+    position: absolute;
+    left: 125px;
+    top: 100px;
+    z-index: 2;
+}
+
+.circle5 {
+    /* Create the circle */
+    width: 200px;
+    height: 200px;
+    border: 5px solid white;
+    border-radius: 50%;
+    background-color: #52658f;
+    position: absolute;
+    left: 150px;
+    top: -15px;
+    z-index: 1;
+    
+  }
+
+.circle6 {
+    /* Create the circle */
+    width: 275px;
+    height: 275px;
+    border: 5px solid white;
+    border-radius: 50%;
+    background-color:#f7882f;
+    position: absolute;
+    left: 125px;
+    top: 100px;
+    z-index: 2;
+}
 
 .about p {
     letter-spacing: 1.3px;
     font-weight: 300;
     color: #52658f;
-}
-
-.text {
-    max-width: 600px;
-    margin: 2%;
-    font-size: 1.25em;
 }
 
 .order {
@@ -312,6 +312,104 @@ h3 {
     text-align: center;
 }
 
+/* .footer-nav,
+li         {
+    flex-direction: column;
+    padding-left: 0;
+} */
+
+.footer-nav         {
+    flex-direction: column;
+    padding-left: 0;
+    /* Used list-style-type to remove the bullet points from the ul */
+    list-style-type: none;
+}
+
+/* I have rectified this, by adding the comma between the two you are targeting 
+both elements seperatly, without the comma you are directing the styling
+to target the li.
+But what you wanted was to remove the padding of the ul and set its flex direction to column
+_ Luke */
+
+/* ------------------------ */
+
+.cols {
+    display: flex;
+    /* Have changed this to space-between so the elements are pushed to the edge 
+    of the container - Luke */
+    justify-content: space-between;
+    /* justify-content: space-around; */
+    /* Ive added the width to this cols element to align it with the width of the navbar
+    and given it margin of 0 auto to place it on the middle of the page - Luke */
+    width: 80%;
+    margin: 0 auto;
+    color: #f7f5e6;
+   
+}
+
+/* Added bigger margin under the h3 in the footer - Luke */
+.cols h3 {
+    margin-bottom: 30px;
+}
+
+/* Pseudo element for the > in the html, styled to be bold compared to the a tag itself - Luke */
+.col-3 ul li a::before {
+    content: '>';
+    font-weight: bold;
+}
+
+/* Ive added a bigger line height to make it closer to the concept - Luke */
+.cols p,
+.cols a {
+    line-height: 28px;
+    color: #f7f5e6;
+}
+
+/* added the styling to the a tags of col-3 to match the styling of the p
+in other columns - Luke */
+.col-3 a {
+    font-weight: 200;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+/* Added a bigger margin to adjust the sppace between the details  */
+.col-1 p {
+    margin-bottom: 30px;
+}
+
+.copy {
+    align-self: center;
+    justify-content: center;
+}
+
+.border {
+       
+    border: 1.5px solid #52658f;
+    position: relative;
+    width: 30%;
+    align-self: center;
+    margin-bottom: 35px;
+}
+
+
+/* Ive added a font weight to the p elements to make them skinnier by adjusting the font weight
+_ Luke */
+.footer p {
+    font-weight: 200;
+    font-size: 18px;
+    letter-spacing: 2px;
+    
+}
+
+.fas  {
+    color: #f7882f;
+    font-size: xx-large;
+    border: #343957 solid 15px;
+    border-radius: 50%;
+    text-align: center;
+    background-color: #343957;
+}
 
 /* ---- Navigation ---- */
 
@@ -362,9 +460,7 @@ a:hover:after {
 #mapid{ 
     height: 200px;
     width: 400px;
-    
-
- }
+}
 
 
 /*<!-- Make sure you put this AFTER Leaflet's CSS -->*/
