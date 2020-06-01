@@ -120,7 +120,7 @@ class product {
 
       //   Update output ----------------------------------------------
 
-      $cart.innerHTML = $inCart.toString();
+      $cart.innerHTML = $inCart.toString().replace(/\,/g, "");
 
       $total.innerText = "Cart Total: £" + sumArray($finalTotal);
     });

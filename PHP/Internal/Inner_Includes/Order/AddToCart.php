@@ -196,11 +196,12 @@
             ?>
         </div>
         <div id="cart">
-            <h3></h3>
+            <h3 id="cart-title">CART</h3>
             <div id="list">
                 <!-- cart content -->
             </div>
             <h3 id="total"></h3>
+            <a class="button" href="">Place Order</a>
         </div>
     </div>
 </div>

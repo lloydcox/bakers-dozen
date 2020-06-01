@@ -1,26 +1,20 @@
-.shop-content{
-    margin: 0 8.75rem;
-    padding: 50px 0;
-    display: flex;
-    flex-wrap: wrap;
-    .width {
-        margin: 25px 0;
-        width: 100%;
-        .divider {
-            display: block;
-        content: "";
-        height: 3px;
-        width: 30%;
-        background-color: #52658f;
-        margin: 0 auto;
-        }
-    } 
-}
-#cart {
+.shop-content {
+  margin: 0 8.75rem;
+  padding: 50px 0;
+  display: flex;
+  flex-wrap: wrap;
+  .width {
+    margin: 25px 0;
     width: 100%;
-    height: 200px;
-    border: 3px $Main solid;
-    border-radius: 3.125rem;
+    .divider {
+      display: block;
+      content: "";
+      height: 3px;
+      width: 30%;
+      background-color: #52658f;
+      margin: 0 auto;
+    }
+  }
 }
 .bread-shop,
 .cake-shop,
@@ -28,47 +22,87 @@
 .pizza-shop,
 .pretzel-shop,
 .pastries-shop {
-    width: 50%;
+  width: 50%;
 }
 .shop-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 25px;
+  img {
+    height: 132px;
+    margin-right: 32px;
+    border-radius: 100%;
+    border: 3px $Main solid;
+  }
+  .info {
+    height: 100%;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 32px;
+    h3,
+    p {
+      margin: 0;
+    }
+  }
+  .quantity {
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    margin: 25px;
-    img {
-        height: 132px;
-        margin-right: 32px;
-        border-radius: 100%;
-        border: 3px $Main solid;
+    .value {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: $Contrast 3px solid;
+      height: 32px;
+      width: 40px;
+      border-radius: 50px;
+      p {
+        margin: 0;
+      }
     }
-    .info {
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        margin-right: 32px;
-        h3, p {
-            margin: 0;
-        }
+    input {
+      width: 150px;
     }
-    .quantity {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        .value {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border: $Contrast 3px solid;
-            height: 32px;
-            width: 40px;
-            border-radius: 50px;
-            p {
-                margin: 0;
-            }
-        }
-        input {
-            width: 150px;
-        }
+  }
+}
+
+#cart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  width: 100%;
+  border: 3px $Main solid;
+  border-radius: 3.125rem;
+  padding: 32px;
+  #cart-title {
+    h3{
+        margin-bottom: 32px;
+      }
+  }
+  #list {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      width: 70%;
+    div {
+      h3,
+      p {
+        margin-bottom: 5px;
+      }
+      border: 3px $Main solid;
+      border-radius: 3.125rem;
+      width: 50%;
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 32px;
     }
+  }
+  #total {
+    margin: 0;
+  }
 }

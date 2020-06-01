@@ -670,12 +670,6 @@ a:hover:after {
       background-color: #52658f;
       margin: 0 auto; }
 
-#cart {
-  width: 100%;
-  height: 200px;
-  border: 3px #52658f solid;
-  border-radius: 3.125rem; }
-
 .bread-shop,
 .cake-shop,
 .pie-shop,
@@ -700,7 +694,8 @@ a:hover:after {
     flex-direction: column;
     align-items: flex-start;
     margin-right: 32px; }
-    .shop-item .info h3, .shop-item .info p {
+    .shop-item .info h3,
+    .shop-item .info p {
       margin: 0; }
   .shop-item .quantity {
     display: flex;
@@ -718,6 +713,37 @@ a:hover:after {
         margin: 0; }
     .shop-item .quantity input {
       width: 150px; }
+
+#cart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  border: 3px #52658f solid;
+  border-radius: 3.125rem;
+  padding: 32px; }
+  #cart #cart-title h3 {
+    margin-bottom: 32px; }
+  #cart #list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 70%; }
+    #cart #list div {
+      border: 3px #52658f solid;
+      border-radius: 3.125rem;
+      width: 50%;
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 32px; }
+      #cart #list div h3,
+      #cart #list div p {
+        margin-bottom: 5px; }
+  #cart #total {
+    margin: 0; }
 
 * {
   font-family: "Roboto", sans-serif;
